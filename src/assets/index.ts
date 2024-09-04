@@ -36,6 +36,7 @@ import homeGalleryImage5 from './home/home_gallery_img5.svg';
 import homeLocationImage1 from './home/home_location_img1.svg';
 import homeLocationImage2 from './home/home_location_img2.svg';
 import homeLocationImage3 from './home/home_location_img3.svg';
+import homeLocationImage4 from './home/home_location_img4.svg';
 import homeSwimLessonsImage from './home/home_swim_lessons.svg';
 
 // Learn to Swim
@@ -94,6 +95,7 @@ export {
   homeLocationImage1,
   homeLocationImage2,
   homeLocationImage3,
+  homeLocationImage4,
   homeSwimLessonsImage,
 
   // Learn to Swim

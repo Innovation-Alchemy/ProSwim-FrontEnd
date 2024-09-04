@@ -5,10 +5,10 @@ interface TitleProps {
   primary: string;
 }
 
-const TitleComponent = ({ secondary, primary }: TitleProps) => {
+const Title = ({ secondary, primary }: TitleProps) => {
   return (
-    <div>
-      <h2 className="font-bold text-[2.5rem] leading-[2.3325] text-[#1E5C97] font-playfair-display capitalize">
+    <div className="flex items-center flex-col mt-[6.25rem]">
+      <h2 className="font-bold text-[2.5rem] leading-[2.3325] text-[#1E5C97] font-playfair-display capitalize text-center">
         <span className="text-[#7E7E7E]">{secondary.trim().toLowerCase()}</span>{' '}
         {primary.trim().toLowerCase()}
       </h2>
@@ -17,4 +17,4 @@ const TitleComponent = ({ secondary, primary }: TitleProps) => {
   );
 };
 
-export default TitleComponent;
+export default Title;
