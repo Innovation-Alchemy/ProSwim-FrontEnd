@@ -1,12 +1,13 @@
 // Authentication (Login/Signup/Verification)
 import authenticationBackground from './authentication/authentication_bg.svg';
-import loginAnimation from './authentication/login_animation.svg';
+import loginAnimation from './authentication/login_animation.gif';
+import googleIcon from './authentication/Google_Icon.svg';
 
 // Footer
 import footerLogo from './footer/footer_X.svg';
-import footerFacebookIcon from './footer/footer_facebook.svg';
-import footerInstagramIcon from './footer/footer_instagram.svg';
-import footerYoutubeIcon from './footer/footer_youtube.svg';
+import facebookIcon from './footer/footer_facebook.svg';
+import instagramIcon from './footer/footer_instagram.svg';
+import youtubeIcon from './footer/footer_youtube.svg';
 import footerBackground from './footer/footer_img.jfif';
 
 // Gallery
@@ -58,12 +59,13 @@ export {
   // Authentication
   authenticationBackground,
   loginAnimation,
+  googleIcon,
 
   // Footer
   footerLogo,
-  footerFacebookIcon,
-  footerInstagramIcon,
-  footerYoutubeIcon,
+  facebookIcon,
+  instagramIcon,
+  youtubeIcon,
   footerBackground,
 
   // Gallery
