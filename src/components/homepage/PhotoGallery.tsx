@@ -48,7 +48,7 @@ const PhotoGallery = () => {
   const currentPhotos = photos.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (
-    <div className="w-full flex flex-col items-center py-8 bg-gray-100">
+    <div className="w-full flex flex-col items-center py-8 bg-gray-100 mx-[4.375rem]">
       <Title secondary={'our'} primary={'gallery'} />
       <div className="relative w-full max-w-6xl flex items-center mt-[3.4375rem]">
         <button

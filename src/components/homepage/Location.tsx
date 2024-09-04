@@ -32,7 +32,7 @@ const locations = [
 
 const Location = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mx-[4.375rem]">
       <Title secondary="our" primary="location" />
       <div className="mt-[4.4375rem] flex flex-wrap justify-center gap-[3.125rem]">
         {locations.map((location, index) => (
