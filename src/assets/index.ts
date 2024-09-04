@@ -21,7 +21,7 @@ import galleryPhoto7 from './gallery/gallery_photo7.svg';
 
 // General
 import logo from './general/proswim_logo.svg';
-import titleUnderline from './general/title_underline.svg';
+import TitleUnderline from './general/TitleUnderLine';
 
 // Home
 import homeCardImage1 from './home/home_card_img1.svg';
@@ -79,7 +79,7 @@ export {
 
   // General
   logo,
-  titleUnderline,
+  TitleUnderline,
 
   // Home
   homeCardImage1,

@@ -1,7 +1,13 @@
+import { homeSwimLessonsImage } from '@/assets';
+import { CoreValues } from '@/components';
+
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <CoreValues />
+      <img className="w-full my-[6.25rem]" src={homeSwimLessonsImage}></img>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
