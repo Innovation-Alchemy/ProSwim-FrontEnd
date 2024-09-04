@@ -1,0 +1,113 @@
+// Authentication (Login/Signup/Verification)
+import authenticationBackground from './authentication/authentication_bg.svg';
+import loginAnimation from './authentication/login_animation.svg';
+
+// Footer
+import footerLogo from './footer/footer_X.svg';
+import footerFacebookIcon from './footer/footer_facebook.svg';
+import footerInstagramIcon from './footer/footer_instagram.svg';
+import footerYoutubeIcon from './footer/footer_youtube.svg';
+import footerBackground from './footer/footer_img.jfif';
+
+// Gallery
+import galleryPhoto1 from './gallery/gallery_photo1.svg';
+import galleryPhoto2 from './gallery/gallery_photo2.svg';
+import galleryPhoto3 from './gallery/gallery_photo3.svg';
+import galleryPhoto4 from './gallery/gallery_photo4.svg';
+import galleryPhoto5 from './gallery/gallery_photo5.svg';
+import galleryPhoto6 from './gallery/gallery_photo6.svg';
+import galleryPhoto7 from './gallery/gallery_photo7.svg';
+
+// General
+import logo from './general/proswim_logo.svg';
+import titleUnderline from './general/title_underline.svg';
+
+// Home
+import homeCardImage1 from './home/home_card_img1.svg';
+import homeCardImage2 from './home/home_card_img2.svg';
+import homeCardImage3 from './home/home_card_img3.svg';
+import homeCarouselImage from './home/home_carousel_img1.svg';
+import homeGalleryImage1 from './home/home_gallery_img1.svg';
+import homeGalleryImage2 from './home/home_gallery_img2.svg';
+import homeGalleryImage3 from './home/home_gallery_img3.svg';
+import homeGalleryImage4 from './home/home_gallery_img4.svg';
+import homeGalleryImage5 from './home/home_gallery_img5.svg';
+import homeLocationImage1 from './home/home_location_img1.svg';
+import homeLocationImage2 from './home/home_location_img2.svg';
+import homeLocationImage3 from './home/home_location_img3.svg';
+import homeSwimLessonsImage from './home/home_swim_lessons.svg';
+
+// Learn to Swim
+import learnToSwimIcon1 from './learnswim/learn_to_swim_icon1.svg';
+import learnToSwimIcon2 from './learnswim/learn_to_swim_icon2.svg';
+
+// Pro Swimmers
+import proSwimmer1 from './proswimmer/proswimmer_1.svg';
+import proSwimmer2 from './proswimmer/proswimmer_2.svg';
+import proSwimmer3 from './proswimmer/proswimmer_3.svg';
+
+// Shop
+import shopBackground from './shop/shop_bg.svg';
+import shopItem1Pink from './shop/shop_item1.svg';
+import shopItem1Blue from './shop/shop_item1_blue.svg';
+import shopItem2 from './shop/shop_item2.svg';
+import shopItem3 from './shop/shop_item3.svg';
+import shopItem4 from './shop/shop_item4.svg';
+
+export {
+  // Authentication
+  authenticationBackground,
+  loginAnimation,
+
+  // Footer
+  footerLogo,
+  footerFacebookIcon,
+  footerInstagramIcon,
+  footerYoutubeIcon,
+  footerBackground,
+
+  // Gallery
+  galleryPhoto1,
+  galleryPhoto2,
+  galleryPhoto3,
+  galleryPhoto4,
+  galleryPhoto5,
+  galleryPhoto6,
+  galleryPhoto7,
+
+  // General
+  logo,
+  titleUnderline,
+
+  // Home
+  homeCardImage1,
+  homeCardImage2,
+  homeCardImage3,
+  homeCarouselImage,
+  homeGalleryImage1,
+  homeGalleryImage2,
+  homeGalleryImage3,
+  homeGalleryImage4,
+  homeGalleryImage5,
+  homeLocationImage1,
+  homeLocationImage2,
+  homeLocationImage3,
+  homeSwimLessonsImage,
+
+  // Learn to Swim
+  learnToSwimIcon1,
+  learnToSwimIcon2,
+
+  // Pro Swimmers
+  proSwimmer1,
+  proSwimmer2,
+  proSwimmer3,
+
+  // Shop
+  shopBackground,
+  shopItem1Pink,
+  shopItem1Blue,
+  shopItem2,
+  shopItem3,
+  shopItem4,
+};
