@@ -1,21 +1,27 @@
-import { CoreValues } from '@/components';
-import PhotoGallery from '@/components/homepage/PhotoGallery';
-import VideoGallery from '@/components/homepage/VideoGallery';
-import Location from '@/components/homepage/Location';
-import Carousel from '@/components/homepage/Carousel';
-import Navbar from '@/components/shared/Navbar';
-import Banner from '@/components/homepage/Banner';
+import { CoreValues } from "@/components";
+import PhotoGallery from "@/components/homepage/PhotoGallery";
+import VideoGallery from "@/components/homepage/VideoGallery";
+import Location from "@/components/homepage/Location";
+import Carousel from "@/components/homepage/Carousel";
+import Navbar from "@/components/shared/Navbar";
+import Banner from "@/components/homepage/Banner";
 
 const Home = () => {
   return (
     <div className="overflow-x-auto">
       <Navbar />
       <Carousel />
-      <CoreValues />
+      <div className="my-12">
+        <CoreValues />
+      </div>
       <Banner />
-      <div className="flex flex-col mx-[4.375rem] gap-[6.25rem]">
+      <div className="my-12">
         <PhotoGallery />
+      </div>
+      <div>
         <VideoGallery />
+      </div>
+      <div className="">
         <Location />
       </div>
     </div>

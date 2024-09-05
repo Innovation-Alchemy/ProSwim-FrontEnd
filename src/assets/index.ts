@@ -40,6 +40,7 @@ import homeLocationImage2 from './home/home_location_img2.svg';
 import homeLocationImage3 from './home/home_location_img3.svg';
 import homeLocationImage4 from './home/home_location_img4.svg';
 import homeSwimLessonsImage from './home/home_swim_lessons.svg';
+import cardPhoto from "./home/card.jpg"
 
 // Learn to Swim
 import learnToSwimIcon1 from './learnswim/learn_to_swim_icon1.svg';
@@ -101,6 +102,7 @@ export {
   homeLocationImage3,
   homeLocationImage4,
   homeSwimLessonsImage,
+  cardPhoto,
 
   // Learn to Swim
   learnToSwimIcon1,

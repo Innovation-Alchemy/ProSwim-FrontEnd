@@ -1,13 +1,32 @@
-import { homeSwimLessonsImage } from '@/assets';
+import { homeSwimLessonsImage } from "@/assets";
+import { motion, useAnimate } from "framer-motion";
 
 const Banner = () => {
+  const [scope, animate] = useAnimate();
+
   return (
-    <div className="relative">
-      <img className="w-full mt-[6.25rem]" src={homeSwimLessonsImage}></img>
-      <div className="absolute inset-0 bg-gray-400 bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
-        <span className="text-6xl font-bold absolute inset-40 mr-20 flex items-end justify-end">
+    <div
+    ref={scope}
+      className="relative overflow-hidden"
+      onMouseOver={() => {
+        animate("span", { scaleX: 4, scaleY: 1 });
+      }}
+      onMouseOut={() => {
+        animate("span", { scaleY: 0 });
+      }}
+    >
+      <span
+        className="absolute border-[#ffffffc9] border-[20vw] 
+      border-l-transparent border-t-transparent bottom-0 right-0 scale-x-[0] transition-all"
+      ></span>
+      <img
+        className="w-full h-full object-cover"
+        src={homeSwimLessonsImage}
+      ></img>
+      <div className="absolute inset-0 bg-gray-700 bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
+        <p className="text-6xl font-bold absolute inset-40 mr-20 flex items-end justify-end">
           Book Now
-        </span>
+        </p>
       </div>
     </div>
   );

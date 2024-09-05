@@ -29,7 +29,9 @@ const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[35rem]">
+    <div className="relative w-full" style={{
+      height: 'calc(100vh - 84px)',
+    }}>
       {/* Image display */}
       <img
         src={imgs[currentIndex].src}

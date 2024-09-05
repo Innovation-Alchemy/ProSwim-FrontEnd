@@ -32,9 +32,14 @@ const locations = [
 
 const Location = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center container">
       <Title secondary="our" primary="location" />
-      <div className="mt-[4.4375rem] flex flex-wrap justify-center gap-[3.125rem]">
+      <div className="gap-[3.125rem] w-full"
+       style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(400px, 1fr))",
+      }}
+      >
         {locations.map((location, index) => (
           <LocationImg
             key={index}

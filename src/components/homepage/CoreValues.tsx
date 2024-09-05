@@ -1,4 +1,4 @@
-import { homeCardImage1, homeCardImage2, homeCardImage3 } from "@/assets";
+import { cardPhoto } from "@/assets";
 import Card from "./Card";
 import Title from "../shared/Title";
 
@@ -18,7 +18,7 @@ we customize a teaching style that works
 best for each individual’s different needs,
 abilities, desires, talents, strength & weak
 points and many other important factors.`,
-    img: homeCardImage1,
+    img: cardPhoto,
     isRotated: true,
   },
   {
@@ -29,7 +29,7 @@ in a fun & safe environment! Starting at early
 stages and continually refining the strokes
 through the years of training. It’s critical to
 make sure kids have the fundamental.`,
-    img: homeCardImage2,
+    img: cardPhoto,
     isRotated: false,
   },
   {
@@ -41,16 +41,22 @@ and skills, up to building and maintaining a
 united cooperative competitive team with the
 highest spirit, technique levels and challenging
 energy`,
-    img: homeCardImage3,
+    img: cardPhoto,
     isRotated: false,
   },
 ];
 
 const CoreValues = () => {
   return (
-    <div className="w-full flex items-center flex-col mx-[4.375rem]">
+    <div className="w-full flex items-center flex-col flex-wrap container">
       <Title secondary={"our"} primary={"core values"} />
-      <div className="flex flex-col sm:flex-row gap-[3.4375rem]">
+      <div
+        className="gap-[3.4375rem]"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))",
+        }}
+      >
         {cardData.map((card) => {
           return (
             <Card

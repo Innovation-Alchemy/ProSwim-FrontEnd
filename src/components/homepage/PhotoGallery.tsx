@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import {
-  homeGalleryImage1,
-  homeGalleryImage2,
-  homeGalleryImage3,
-  homeGalleryImage4,
-  homeGalleryImage5,
+  cardPhoto
 } from '@/assets';
 import Title from '../shared/Title';
 import Image from '../shared/Image';
@@ -18,23 +14,23 @@ import {
 } from '@/components/ui/carousel';
 
 const photos = [
-  { src: homeGalleryImage1, alt: 'img1' },
-  { src: homeGalleryImage2, alt: 'img2' },
-  { src: homeGalleryImage3, alt: 'img3' },
-  { src: homeGalleryImage4, alt: 'img4' },
-  { src: homeGalleryImage2, alt: 'img2' },
-  { src: homeGalleryImage5, alt: 'img5' },
-  { src: homeGalleryImage1, alt: 'img6' },
-  { src: homeGalleryImage2, alt: 'img7' },
-  { src: homeGalleryImage3, alt: 'img8' },
-  { src: homeGalleryImage4, alt: 'img9' },
-  { src: homeGalleryImage5, alt: 'img10' },
-  { src: homeGalleryImage5, alt: 'img5' },
-  { src: homeGalleryImage1, alt: 'img6' },
-  { src: homeGalleryImage2, alt: 'img7' },
-  { src: homeGalleryImage3, alt: 'img8' },
-  { src: homeGalleryImage4, alt: 'img9' },
-  { src: homeGalleryImage5, alt: 'img10' },
+  { src: cardPhoto, alt: 'img1' },
+  { src: cardPhoto, alt: 'img2' },
+  { src: cardPhoto, alt: 'img3' },
+  { src: cardPhoto, alt: 'img4' },
+  { src: cardPhoto, alt: 'img2' },
+  { src: cardPhoto, alt: 'img5' },
+  { src: cardPhoto, alt: 'img6' },
+  { src: cardPhoto, alt: 'img7' },
+  { src: cardPhoto, alt: 'img8' },
+  { src: cardPhoto, alt: 'img9' },
+  { src: cardPhoto, alt: 'img10' },
+  { src: cardPhoto, alt: 'img5' },
+  { src: cardPhoto, alt: 'img6' },
+  { src: cardPhoto, alt: 'img7' },
+  { src: cardPhoto, alt: 'img8' },
+  { src: cardPhoto, alt: 'img9' },
+  { src: cardPhoto, alt: 'img10' },
 ];
 
 const PhotoGallery = () => {
@@ -45,7 +41,7 @@ const PhotoGallery = () => {
     <>
       <Title secondary={'our'} primary={'gallery'} />
       <div className="flex justify-center">
-        <Carousel className="w-[80%] h-[41.5rem] !outline-none !border-none !ring-0 no-focus">
+        <Carousel className="w-[80%] !outline-none !border-none !ring-0 no-focus">
           <CarouselContent>
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem key={index}>
