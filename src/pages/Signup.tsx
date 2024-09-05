@@ -4,7 +4,7 @@ import { signupFormSchema } from "@/lib/validations";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { loginAnimation } from "@/assets";
+import { penGif } from "@/assets";
 import { Link } from "react-router-dom";
 import { TextFormField } from "@/components/shared/TextFormField";
 import { FormBackground, GoogleButton } from "@/components";
@@ -27,7 +27,7 @@ const Signup = () => {
       <div>
         <h1 className="text-[40px] text-center">Welcome Back</h1>
         <div className="flex items-center justify-center gap-4 text-2xl">
-          <img src={loginAnimation} alt="login" className="w-9 h-12" />
+          <img src={penGif} alt="login" className="w-9 h-12" />
           <span>Signup</span>
         </div>
       </div>
@@ -74,7 +74,7 @@ const Signup = () => {
         </Link>
       </p>
     </FormBackground>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;

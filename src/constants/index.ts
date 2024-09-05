@@ -17,6 +17,8 @@ import {
   Videos,
 } from "@/pages";
 
+import { homeCarouselImage, homeCarouselImage2 } from "@/assets";
+
 export const routes = [
   {
     path: "/",
@@ -43,14 +45,6 @@ export const routes = [
     component: Dashboard,
   },
   {
-    path: "/login",
-    component: Login,
-  },
-  {
-    path: "/signup",
-    component: Signup,
-  },
-  {
     path: "/feedback",
     component: Feedback,
   },
@@ -71,16 +65,27 @@ export const routes = [
     component: Shop,
   },
   {
-    path: "/verify-account",
-    component: VerifyAccount,
-  },
-  {
     path: "/video-gallery",
     component: VideoGallery,
   },
   {
     path: "/videos",
     component: Videos,
+  },
+];
+
+export const authRoutes = [
+  {
+    path: "/login",
+    component: Login,
+  },
+  {
+    path: "/signup",
+    component: Signup,
+  },
+  {
+    path: "/verify-account",
+    component: VerifyAccount,
   },
 ];
 
@@ -92,6 +97,13 @@ export const links = [
   { path: "/classes", name: "Classes" },
   { path: "/album", name: "Album" },
   { path: "/contact-us", name: "Contact Us" },
+];
+
+export const carouselImages = [
+  { src: homeCarouselImage, alt: "Image 1", link: "/", hasButton: false },
+  { src: homeCarouselImage2, alt: "Image 2", link: "/shop", hasButton: true },
+  { src: homeCarouselImage, alt: "Image 3", link: "/", hasButton: false },
+  { src: homeCarouselImage2, alt: "Image 4", link: "/shop", hasButton: true },
 ];
 
 export const socialMediaLinks = [];

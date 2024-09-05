@@ -1,18 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { homeCarouselImage, homeCarouselImage2 } from '@/assets';
+import { carouselImages } from "@/constants";
+import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
-const imgs = [
-  { src: homeCarouselImage, alt: 'Image 1', link: '/', hasButton: false },
-  { src: homeCarouselImage2, alt: 'Image 2', link: '/shop', hasButton: true },
-  { src: homeCarouselImage, alt: 'Image 3', link: '/', hasButton: false },
-  { src: homeCarouselImage2, alt: 'Image 4', link: '/shop', hasButton: true },
-];
-
-const Carousel: React.FC = () => {
+const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex(prevIndex => (prevIndex + 1) % imgs.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+  };
+
+  const handleIndicatorClick = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  const handleImageClick = () => {
+    window.location.href = carouselImages[currentIndex].link;
   };
 
   useEffect(() => {
@@ -20,28 +22,30 @@ const Carousel: React.FC = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const handleIndicatorClick = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  const handleImageClick = () => {
-    window.location.href = imgs[currentIndex].link;
-  };
-
   return (
-    <div className="relative w-full" style={{
-      height: 'calc(100vh - 84px)',
-    }}>
+    <div
+      className="relative w-full"
+      style={{
+        height: "calc(100vh - 84px)",
+      }}
+    >
       {/* Image display */}
-      <img
-        src={imgs[currentIndex].src}
-        alt={imgs[currentIndex].alt}
-        className="w-full h-full cursor-pointer object-cover"
-        onClick={handleImageClick}
-      />
+      <AnimatePresence>
+        <motion.img
+          key={currentIndex}
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          // exit={{ opacity: 0, x: 0 }}
+          transition={{type: "tween"}}
+          src={carouselImages[currentIndex].src}
+          alt={carouselImages[currentIndex].alt}
+          className="w-full h-full cursor-pointer object-cover"
+          onClick={handleImageClick}
+        />
+      </AnimatePresence>
 
       {/* Button on some images */}
-      {imgs[currentIndex].hasButton && (
+      {carouselImages[currentIndex].hasButton && (
         <button
           className="absolute bottom-20 rounded-md text-6xl left-1/2 transform -translate-x-1/2 bg-blue-500 text-white py-2 px-4 border border-blue-500 hover:bg-transparent hover:text-blue-500 font-splash"
           onClick={handleImageClick}
@@ -52,12 +56,12 @@ const Carousel: React.FC = () => {
 
       {/* Indicators */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {imgs.map((_, index) => (
+        {carouselImages.map((_, index) => (
           <button
             key={index}
             onClick={() => handleIndicatorClick(index)}
             className={`w-4 h-4 rounded-full ${
-              currentIndex === index ? 'bg-blue-500' : 'bg-gray-900'
+              currentIndex === index ? "bg-blue-500" : "bg-gray-900"
             }`}
           >
             {currentIndex === index && (
