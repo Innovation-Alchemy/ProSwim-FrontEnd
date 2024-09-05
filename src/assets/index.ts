@@ -23,6 +23,8 @@ import galleryPhoto7 from './gallery/gallery_photo7.svg';
 // General
 import logo from './general/proswim_logo.svg';
 import TitleUnderline from './general/TitleUnderline';
+import shareIcon from './general/Share.svg';
+import headerBG from './general/header_bg.svg';
 
 // Home
 import homeCardImage1 from './home/home_card_img1.svg';
@@ -40,7 +42,7 @@ import homeLocationImage2 from './home/home_location_img2.svg';
 import homeLocationImage3 from './home/home_location_img3.svg';
 import homeLocationImage4 from './home/home_location_img4.svg';
 import homeSwimLessonsImage from './home/home_swim_lessons.svg';
-import cardPhoto from "./home/card.jpg"
+import cardPhoto from './home/card.jpg';
 
 // Learn to Swim
 import learnToSwimIcon1 from './learnswim/learn_to_swim_icon1.svg';
@@ -85,6 +87,8 @@ export {
   // General
   logo,
   TitleUnderline,
+  shareIcon,
+  headerBG,
 
   // Home
   homeCardImage1,
