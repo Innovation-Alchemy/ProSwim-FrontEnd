@@ -1,10 +1,10 @@
-import { CoreValues } from "@/components";
-import PhotoGallery from "@/components/homepage/PhotoGallery";
-import VideoGallery from "@/components/homepage/VideoGallery";
-import Location from "@/components/homepage/Location";
-import Carousel from "@/components/homepage/Carousel";
-import Navbar from "@/components/shared/Navbar";
-import Banner from "@/components/homepage/Banner";
+import { CoreValues } from '@/components';
+import PhotoGallery from '@/components/homepage/PhotoGallery';
+import VideoGallery from '@/components/homepage/VideoGallery';
+import Location from '@/components/homepage/Location';
+import Carousel from '@/components/homepage/Carousel';
+import Navbar from '@/components/shared/Navbar';
+import Banner from '@/components/homepage/Banner';
 
 const Home = () => {
   return (
@@ -18,10 +18,10 @@ const Home = () => {
       <div className="my-12">
         <PhotoGallery />
       </div>
-      <div>
+      <div className="my-12">
         <VideoGallery />
       </div>
-      <div className="">
+      <div className="my-12">
         <Location />
       </div>
     </div>

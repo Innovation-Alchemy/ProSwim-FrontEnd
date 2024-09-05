@@ -1,7 +1,5 @@
-import { useState } from 'react';
-import {
-  cardPhoto
-} from '@/assets';
+import React from 'react';
+import { cardPhoto } from '@/assets';
 import Title from '../shared/Title';
 import Image from '../shared/Image';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,44 +11,59 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 
-const photos = [
+// Define the type for a photo
+interface Photo {
+  src: string;
+  alt: string;
+}
+
+// Sample photos data
+const photos: Photo[] = [
   { src: cardPhoto, alt: 'img1' },
   { src: cardPhoto, alt: 'img2' },
   { src: cardPhoto, alt: 'img3' },
   { src: cardPhoto, alt: 'img4' },
-  { src: cardPhoto, alt: 'img2' },
   { src: cardPhoto, alt: 'img5' },
   { src: cardPhoto, alt: 'img6' },
   { src: cardPhoto, alt: 'img7' },
   { src: cardPhoto, alt: 'img8' },
   { src: cardPhoto, alt: 'img9' },
   { src: cardPhoto, alt: 'img10' },
-  { src: cardPhoto, alt: 'img5' },
-  { src: cardPhoto, alt: 'img6' },
-  { src: cardPhoto, alt: 'img7' },
-  { src: cardPhoto, alt: 'img8' },
-  { src: cardPhoto, alt: 'img9' },
-  { src: cardPhoto, alt: 'img10' },
+  { src: cardPhoto, alt: 'img11' },
+  { src: cardPhoto, alt: 'img12' },
+  { src: cardPhoto, alt: 'img13' },
+  { src: cardPhoto, alt: 'img14' },
+  { src: cardPhoto, alt: 'img15' },
+  { src: cardPhoto, alt: 'img16' },
 ];
 
-const PhotoGallery = () => {
-  const [endIndex, setEndIndex] = useState(6);
-  const startIndex = endIndex - 6;
-  const currentPhotos = photos.slice(startIndex, endIndex);
+// Function to split photos into chunks
+const getPhotoChunks = (photos: Photo[], chunkSize: number): Photo[][] => {
+  const result: Photo[][] = [];
+  for (let i = 0; i < photos.length; i += chunkSize) {
+    result.push(photos.slice(i, i + chunkSize));
+  }
+  return result;
+};
+
+// Get chunks of 6 photos each
+const photoChunks = getPhotoChunks(photos, 6);
+
+const PhotoGallery: React.FC = () => {
   return (
     <>
       <Title secondary={'our'} primary={'gallery'} />
       <div className="flex justify-center">
-        <Carousel className="w-[80%] !outline-none !border-none !ring-0 no-focus">
+        <Carousel className="w-[80%]">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
+            {photoChunks.map((chunk, chunkIndex) => (
+              <CarouselItem key={chunkIndex}>
                 <div className="p-1">
                   <Card>
                     <CardContent className="grid grid-cols-3 gap-6">
-                      {currentPhotos.map((photo, index) => (
+                      {chunk.map((photo, photoIndex) => (
                         <Image
-                          key={index}
+                          key={photoIndex}
                           src={photo.src}
                           alt={photo.alt}
                           width="w-full"
