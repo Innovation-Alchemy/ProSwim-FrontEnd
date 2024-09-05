@@ -7,6 +7,16 @@ export default {
         'playfair-display': ['Playfair Display'],
         roboto: 'Roboto Mono, monospace',
       },
+      backgroundImage: {
+        'auth-background': "url('/src/assets/authentication/authentication_bg.svg')",
+      },
+      colors: {
+        primary: {
+          DEFAULT: "#1E5C97",
+          foreground: "#fff"
+        },
+        muted: "#00000099"
+      }
     },
   },
   plugins: [],

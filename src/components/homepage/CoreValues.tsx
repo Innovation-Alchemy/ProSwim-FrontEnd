@@ -1,6 +1,6 @@
-import { homeCardImage1, homeCardImage2, homeCardImage3 } from '@/assets';
-import Card from './Card';
-import Title from '../shared/Title';
+import { homeCardImage1, homeCardImage2, homeCardImage3 } from "@/assets";
+import Card from "./Card";
+import Title from "../shared/Title";
 
 type CardData = {
   title: string;
@@ -11,7 +11,7 @@ type CardData = {
 
 const cardData: CardData[] = [
   {
-    title: 'our philosophy',
+    title: "our philosophy",
     paragraph: `We believe that there is only one of you..
 and this is the super power! Based on that,
 we customize a teaching style that works
@@ -22,7 +22,7 @@ points and many other important factors.`,
     isRotated: true,
   },
   {
-    title: 'our mission',
+    title: "our mission",
     paragraph: `From a physical standpoint, our mission is
 to teach the correct techniques of swimming,
 in a fun & safe environment! Starting at early
@@ -33,7 +33,7 @@ make sure kids have the fundamental.`,
     isRotated: false,
   },
   {
-    title: 'our goal',
+    title: "our goal",
     paragraph: `Our goals are many. Starting from teach life
 lessons and values through swimming
 which are equally important to techniques
@@ -49,9 +49,9 @@ energy`,
 const CoreValues = () => {
   return (
     <div className="w-full flex items-center flex-col mx-[4.375rem]">
-      <Title secondary={'our'} primary={'core values'} />
+      <Title secondary={"our"} primary={"core values"} />
       <div className="flex flex-col sm:flex-row gap-[3.4375rem]">
-        {cardData.map(card => {
+        {cardData.map((card) => {
           return (
             <Card
               key={card.title}
