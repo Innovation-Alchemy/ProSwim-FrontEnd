@@ -1,15 +1,18 @@
-import { carouselImages } from "@/constants";
-import { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { carouselImages } from '@/constants';
+import { useState, useEffect, useCallback } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isForward, setIsForward] = useState(true);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
-  };
+  const nextSlide = useCallback(() => {
+    if (!isForward) return;
+    setCurrentIndex(prevIndex => (prevIndex + 1) % carouselImages.length);
+  }, [isForward]);
 
   const handleIndicatorClick = (index: number) => {
+    setIsForward(() => index > currentIndex);
     setCurrentIndex(index);
   };
 
@@ -20,23 +23,28 @@ const Carousel = () => {
   useEffect(() => {
     const intervalId = setInterval(nextSlide, 7000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [nextSlide]);
 
   return (
     <div
       className="relative w-full"
       style={{
-        height: "calc(100vh - 84px)",
+        height: 'calc(100vh - 84px)',
       }}
     >
       {/* Image display */}
       <AnimatePresence>
         <motion.img
           key={currentIndex}
-          initial={{ opacity: 0, x: "100%" }}
-          animate={{ opacity: 1, x: 0 }}
-          // exit={{ opacity: 0, x: 0 }}
-          transition={{type: "tween"}}
+          initial={{
+            opacity: 0,
+            x: isForward ? '100%' : '-100%',
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{ type: 'tween', duration: 0.3 }}
           src={carouselImages[currentIndex].src}
           alt={carouselImages[currentIndex].alt}
           className="w-full h-full cursor-pointer object-cover"
@@ -61,7 +69,7 @@ const Carousel = () => {
             key={index}
             onClick={() => handleIndicatorClick(index)}
             className={`w-4 h-4 rounded-full ${
-              currentIndex === index ? "bg-blue-500" : "bg-gray-900"
+              currentIndex === index ? 'bg-blue-500' : 'bg-gray-900'
             }`}
           >
             {currentIndex === index && (

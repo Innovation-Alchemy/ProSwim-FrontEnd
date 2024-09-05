@@ -1,24 +1,24 @@
-import { logo } from "@/assets";
-import { Link, NavLink } from "react-router-dom";
-import { Button } from "../ui/button";
-import { links } from "@/constants";
-import MobileNav from "./MobileNav";
-import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
-import { MenuIcon } from "lucide-react";
+import { logo } from '@/assets';
+import { Link, NavLink } from 'react-router-dom';
+import { Button } from '../ui/button';
+import { links } from '@/constants';
+import MobileNav from './MobileNav';
+import { useEffect, useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import { MenuIcon } from 'lucide-react';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const activeClassStyle = ({ isActive: active }: { isActive: boolean }) => {
     if (active) {
-      return { fontWeight: "bold", color: "#1E5C97" };
+      return { fontWeight: 'bold', color: '#1E5C97' };
     }
   };
 
   useEffect(() => {
-    document.body.style.overflow = toggle ? "hidden" : "auto";
+    document.body.style.overflow = toggle ? 'hidden' : 'auto';
     return () => {
-      document.body.style.overflow = "auto"; // Cleanup to ensure scroll is enabled when component unmounts
+      document.body.style.overflow = 'auto';
     };
   }, [toggle]);
 
@@ -45,7 +45,7 @@ const Navbar = () => {
         </ul>
         <Button
           type="submit"
-          className="w-[9.0625rem] h-9 text-base max-lg:hidden"
+          className="w-[9.0625rem] h-9 text-base max-lg:hidden hover:bg-transparent hover:font-bold hover:text-blue-500 hover:border-blue-500 hover:border-2"
         >
           Login
         </Button>
