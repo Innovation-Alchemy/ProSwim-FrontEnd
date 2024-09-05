@@ -29,6 +29,7 @@ import homeCardImage1 from './home/home_card_img1.svg';
 import homeCardImage2 from './home/home_card_img2.svg';
 import homeCardImage3 from './home/home_card_img3.svg';
 import homeCarouselImage from './home/home_carousel_img1.svg';
+import homeCarouselImage2 from './home/homeCarouselImg2.svg';
 import homeGalleryImage1 from './home/home_gallery_img1.svg';
 import homeGalleryImage2 from './home/home_gallery_img2.svg';
 import homeGalleryImage3 from './home/home_gallery_img3.svg';
@@ -89,6 +90,7 @@ export {
   homeCardImage2,
   homeCardImage3,
   homeCarouselImage,
+  homeCarouselImage2,
   homeGalleryImage1,
   homeGalleryImage2,
   homeGalleryImage3,

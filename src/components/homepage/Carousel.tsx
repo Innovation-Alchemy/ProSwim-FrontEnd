@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { homeCarouselImage } from '@/assets';
+import { homeCarouselImage, homeCarouselImage2 } from '@/assets';
 
 const imgs = [
-  { src: homeCarouselImage, alt: 'Image 1' },
-  { src: homeCarouselImage, alt: 'Image 2' },
-  { src: homeCarouselImage, alt: 'Image 3' },
-  { src: homeCarouselImage, alt: 'Image 4' },
+  { src: homeCarouselImage, alt: 'Image 1', link: '/', hasButton: false },
+  { src: homeCarouselImage2, alt: 'Image 2', link: '/shop', hasButton: true },
+  { src: homeCarouselImage, alt: 'Image 3', link: '/', hasButton: false },
+  { src: homeCarouselImage2, alt: 'Image 4', link: '/shop', hasButton: true },
 ];
 
 const Carousel: React.FC = () => {
@@ -24,14 +24,29 @@ const Carousel: React.FC = () => {
     setCurrentIndex(index);
   };
 
+  const handleImageClick = () => {
+    window.location.href = imgs[currentIndex].link;
+  };
+
   return (
-    <div className="relative">
+    <div className="relative w-full h-[35rem]">
       {/* Image display */}
       <img
         src={imgs[currentIndex].src}
         alt={imgs[currentIndex].alt}
-        className="w-full h-auto"
+        className="w-full h-full cursor-pointer"
+        onClick={handleImageClick}
       />
+
+      {/* Button on some images */}
+      {imgs[currentIndex].hasButton && (
+        <button
+          className="absolute bottom-20 rounded-md text-6xl left-1/2 transform -translate-x-1/2 bg-blue-500 text-white py-2 px-4 border border-blue-500 hover:bg-transparent hover:text-blue-500"
+          onClick={handleImageClick}
+        >
+          Shop Now
+        </button>
+      )}
 
       {/* Indicators */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
@@ -39,10 +54,12 @@ const Carousel: React.FC = () => {
           <button
             key={index}
             onClick={() => handleIndicatorClick(index)}
-            className="w-4 h-4 rounded-full bg-gray-900"
+            className={`w-4 h-4 rounded-full ${
+              currentIndex === index ? 'bg-blue-500' : 'bg-gray-900'
+            }`}
           >
             {currentIndex === index && (
-              <div className="w-2 h-2 bg-[#1E5C97] rounded-full mx-auto"></div>
+              <div className="w-2 h-2 bg-white rounded-full mx-auto"></div>
             )}
           </button>
         ))}
