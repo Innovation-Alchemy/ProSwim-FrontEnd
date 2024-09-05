@@ -2,6 +2,7 @@
 import authenticationBackground from './authentication/authentication_bg.svg';
 import loginAnimation from './authentication/login_animation.gif';
 import googleIcon from './authentication/Google_Icon.svg';
+import penGif from './authentication/signup_pen.gif';
 
 // Footer
 import footerLogo from './footer/footer_X.svg';
@@ -21,7 +22,7 @@ import galleryPhoto7 from './gallery/gallery_photo7.svg';
 
 // General
 import logo from './general/proswim_logo.svg';
-import TitleUnderline from './general/TitleUnderLine';
+import TitleUnderline from './general/TitleUnderline';
 
 // Home
 import homeCardImage1 from './home/home_card_img1.svg';
@@ -61,6 +62,7 @@ export {
   authenticationBackground,
   loginAnimation,
   googleIcon,
+  penGif,
 
   // Footer
   footerLogo,
