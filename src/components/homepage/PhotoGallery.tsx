@@ -8,6 +8,14 @@ import {
 } from '@/assets';
 import Title from '../shared/Title';
 import Image from '../shared/Image';
+import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const photos = [
   { src: homeGalleryImage1, alt: 'img1' },
@@ -16,76 +24,54 @@ const photos = [
   { src: homeGalleryImage4, alt: 'img4' },
   { src: homeGalleryImage2, alt: 'img2' },
   { src: homeGalleryImage5, alt: 'img5' },
-  { src: homeGalleryImage1, alt: 'img6' }, // Added extra images for demonstration
+  { src: homeGalleryImage1, alt: 'img6' },
   { src: homeGalleryImage2, alt: 'img7' },
   { src: homeGalleryImage3, alt: 'img8' },
   { src: homeGalleryImage4, alt: 'img9' },
   { src: homeGalleryImage5, alt: 'img10' },
-  // Added extra images for demonstration
+  { src: homeGalleryImage5, alt: 'img5' },
+  { src: homeGalleryImage1, alt: 'img6' },
   { src: homeGalleryImage2, alt: 'img7' },
   { src: homeGalleryImage3, alt: 'img8' },
   { src: homeGalleryImage4, alt: 'img9' },
   { src: homeGalleryImage5, alt: 'img10' },
 ];
 
-const itemsPerPage = 6;
-
 const PhotoGallery = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextPage = () => {
-    if (currentIndex + itemsPerPage < photos.length) {
-      setCurrentIndex(currentIndex + itemsPerPage);
-    }
-  };
-
-  const prevPage = () => {
-    if (currentIndex - itemsPerPage >= 0) {
-      setCurrentIndex(currentIndex - itemsPerPage);
-    }
-  };
-
-  const currentPhotos = photos.slice(currentIndex, currentIndex + itemsPerPage);
-
+  const [endIndex, setEndIndex] = useState(6);
+  const startIndex = endIndex - 6;
+  const currentPhotos = photos.slice(startIndex, endIndex);
   return (
-    <div className="w-full flex flex-col items-center py-8 bg-gray-100 mx-[4.375rem]">
+    <>
       <Title secondary={'our'} primary={'gallery'} />
-      <div className="relative w-full max-w-6xl flex items-center mt-[3.4375rem]">
-        <button
-          onClick={prevPage}
-          disabled={currentIndex === 0}
-          className={`absolute left-[-80px] top-1/2 transform -translate-y-1/2 p-3 text-black text-5xl font-bold transition-transform duration-300 ease-in-out ${
-            currentIndex === 0
-              ? 'opacity-50 cursor-not-allowed'
-              : 'hover:text-gray-700'
-          }`}
-        >
-          &lt;
-        </button>
-        <div className="flex flex-wrap gap-7 mx-auto mt-4 justify-center">
-          {currentPhotos.map((photo, index) => (
-            <Image
-              key={index}
-              src={photo.src}
-              alt={photo.alt}
-              width="360px"
-              height="auto"
-            />
-          ))}
-        </div>
-        <button
-          onClick={nextPage}
-          disabled={currentIndex + itemsPerPage >= photos.length}
-          className={`absolute right-[-80px] top-1/2 transform -translate-y-1/2 p-3 text-black text-5xl font-bold transition-transform duration-300 ease-in-out ${
-            currentIndex + itemsPerPage >= photos.length
-              ? 'opacity-50 cursor-not-allowed'
-              : 'hover:text-gray-700'
-          }`}
-        >
-          &gt;
-        </button>
+      <div className="flex justify-center">
+        <Carousel className="w-[80%] h-[41.5rem] !outline-none !border-none !ring-0 no-focus">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="grid grid-cols-3 gap-6">
+                      {currentPhotos.map((photo, index) => (
+                        <Image
+                          key={index}
+                          src={photo.src}
+                          alt={photo.alt}
+                          width="w-full"
+                          height="auto"
+                        />
+                      ))}
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
-    </div>
+    </>
   );
 };
 

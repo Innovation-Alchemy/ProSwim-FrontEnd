@@ -34,14 +34,14 @@ const Carousel: React.FC = () => {
       <img
         src={imgs[currentIndex].src}
         alt={imgs[currentIndex].alt}
-        className="w-full h-full cursor-pointer"
+        className="w-full h-full cursor-pointer object-cover"
         onClick={handleImageClick}
       />
 
       {/* Button on some images */}
       {imgs[currentIndex].hasButton && (
         <button
-          className="absolute bottom-20 rounded-md text-6xl left-1/2 transform -translate-x-1/2 bg-blue-500 text-white py-2 px-4 border border-blue-500 hover:bg-transparent hover:text-blue-500"
+          className="absolute bottom-20 rounded-md text-6xl left-1/2 transform -translate-x-1/2 bg-blue-500 text-white py-2 px-4 border border-blue-500 hover:bg-transparent hover:text-blue-500 font-splash"
           onClick={handleImageClick}
         >
           Shop Now

@@ -30,11 +30,11 @@ const videos = [
 
 const VideoGallery: React.FC = () => {
   return (
-    <div className="mx-[4.375rem]">
+    <div>
       <Title secondary="our" primary="videos" />
-      <div className="mt-8 flex flex-wrap gap-7">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-7">
         {videos.map((video, index) => (
-          <div key={index} className="w-full sm:w-1/3 lg:w-1/3">
+          <div key={index}>
             <Video src={video.src} title={video.title} />
           </div>
         ))}

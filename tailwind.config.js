@@ -6,17 +6,19 @@ export default {
       fontFamily: {
         'playfair-display': ['Playfair Display'],
         roboto: 'Roboto Mono, monospace',
+        splash: '"Splash", cursive',
       },
       backgroundImage: {
-        'auth-background': "url('/src/assets/authentication/authentication_bg.svg')",
+        'auth-background':
+          "url('/src/assets/authentication/authentication_bg.svg')",
       },
       colors: {
         primary: {
-          DEFAULT: "#1E5C97",
-          foreground: "#fff"
+          DEFAULT: '#1E5C97',
+          foreground: '#fff',
         },
-        muted: "#00000099"
-      }
+        muted: '#00000099',
+      },
     },
   },
   plugins: [],

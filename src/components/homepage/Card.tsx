@@ -11,7 +11,7 @@ const Card: React.FC<CardProps> = ({ title, text, img, isRotated = false }) => {
   }`;
 
   return (
-    <div className="w-[22.125rem] h-[35.4375rem] my-[3.4375rem] shadow-[3px_10px_8px_0px_rgba(0,0,0,0.25)] rounded-[1.875rem]">
+    <div className="transition-transform duration-300 transform hover:scale-110 w-[22.125rem] h-[35.4375rem] my-[3.4375rem] shadow-[3px_10px_8px_0px_rgba(0,0,0,0.25)] rounded-[1.875rem]">
       <img className={imgClass} src={img} alt={title} />
       <div className="flex flex-col items-center p-4 flex-grow">
         <h3 className="font-bold capitalize text-center text-xl leading-6">
