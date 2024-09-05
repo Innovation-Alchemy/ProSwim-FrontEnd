@@ -59,7 +59,7 @@ const PhotoGallery: React.FC = () => {
             {photoChunks.map((chunk, chunkIndex) => (
               <CarouselItem key={chunkIndex}>
                 <div className="p-1">
-                  <Card>
+                  <Card className="ring-0 border-0 focus-visible:ring-offset-0 focus-visible:ring-0">
                     <CardContent className="grid grid-cols-3 gap-6">
                       {chunk.map((photo, photoIndex) => (
                         <Image
@@ -76,8 +76,8 @@ const PhotoGallery: React.FC = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="ring-0 border-0 focus-visible:ring-offset-0 focus-visible:ring-0" />
+          <CarouselNext className="ring-0 border-0 focus-visible:ring-offset-0 focus-visible:ring-0" />
         </Carousel>
       </div>
     </>
