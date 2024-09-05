@@ -24,7 +24,7 @@ const MobileNav = ({ closeMenu }: Props) => {
     >
       <div className="h-[84px] shadow-sm flex items-center justify-between container">
         <img src={logo} alt="" className="h-[29px]" />
-        <XIcon className="size-12 border-gray-100 text-primary border-2 rounded-md p-1" onClick={closeMenu}/>
+        <XIcon className="size-12  text-primary border-2 rounded-md p-1" onClick={closeMenu}/>
       </div>
       <ul className="flex flex-col">
         {links.map((link, index) => (
