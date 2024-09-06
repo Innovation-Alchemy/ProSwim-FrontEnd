@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-/* Splash */
-@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
 /* Cabin Sketch */
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+/* Look Sans W00 - Rough Bold */
+@import url(https://db.onlinewebfonts.com/c/d431d843bf64f9700dce5badaf2595c1?family=Look+Sans+W00+Rough+Bold);
 
 @tailwind base;
 @tailwind components;

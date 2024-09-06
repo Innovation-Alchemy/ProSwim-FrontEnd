@@ -8,10 +8,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        'playfair-display': ['Playfair Display'],
-        roboto: 'Roboto Mono, monospace',
-        splash: '"Splash", cursive',
-        'cabin-sketch': '"Cabin Sketch", cursive',
+        'playfair-display': ['Playfair Display', 'serif'],
+        roboto: ['Roboto Mono', 'monospace'],
+        'cabin-sketch': ['Cabin Sketch', 'cursive'],
+        'look-sans': ['Look Sans W00 Rough Bold', 'sans-serif'],
       },
       backgroundImage: {
         'auth-background':

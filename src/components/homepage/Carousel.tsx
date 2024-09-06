@@ -55,7 +55,7 @@ const Carousel = () => {
       {/* Button on some images */}
       {carouselImages[currentIndex].hasButton && (
         <button
-          className="absolute bottom-20 rounded-md text-6xl left-1/2 transform -translate-x-1/2 bg-blue-500 text-white py-2 px-4 border border-blue-500 hover:bg-transparent hover:text-blue-500 font-splash"
+          className="absolute bottom-20 rounded-md text-6xl left-1/2 transform -translate-x-1/2 bg-blue-500 text-white py-2 px-4 border border-blue-500 hover:bg-transparent hover:text-blue-500 font-look-sans"
           onClick={handleImageClick}
         >
           Shop Now
