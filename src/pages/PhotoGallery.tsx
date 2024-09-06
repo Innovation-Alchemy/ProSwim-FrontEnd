@@ -10,6 +10,8 @@ import {
   galleryPhoto7,
 } from '@/assets';
 import Album from '@/components/photogallery_page/Album';
+import Title from '@/components/shared/Title';
+import Header from '@/components/shared/Header';
 
 // Define the type for a photo
 interface Photo {
@@ -43,12 +45,25 @@ const PhotoGallery = () => {
 
   return (
     <div className="overflow-x-auto">
+      <Header title="Photo gallery" />
+
+      <div className="my-[6.25rem]">
+        <Title
+          secondary="Nov 2019"
+          primary="ProSwim Qatar International Championship"
+          reverseSecondary={true}
+        />
+      </div>
+
       {/* GalleryCarousel receives photos and handles image selection */}
-      <GalleryCarousel
-        images={photos}
-        setCurrentIndex={setCurrentIndex}
-        currentIndex={currentIndex}
-      />
+      <div>
+        <GalleryCarousel
+          images={photos}
+          setCurrentIndex={setCurrentIndex}
+          currentIndex={currentIndex}
+        />
+      </div>
+
       {/* Album receives photos, currentIndex and setCurrentIndex for pagination and selection */}
       <div className="mt-8">
         <Album
