@@ -1,7 +1,9 @@
+'use client';
+
 import { useState } from 'react';
 import { Share2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { toast } from '@/hooks/use-toast';
+import { toast } from '@/components/ui/use-toast';
 
 interface Photo {
   id: number;
@@ -16,7 +18,7 @@ interface AlbumProps {
   currentIndex: number | null;
 }
 
-export default function Album({
+export function Album({
   photos,
   photosPerPage = 12,
   setCurrentIndex,
@@ -43,22 +45,22 @@ export default function Album({
           url: window.location.href,
         });
         toast({
-          title: 'Shared successfully',
-          description: 'Your album has been shared.',
+          title: "Shared successfully",
+          description: "Your album has been shared.",
         });
       } catch (error) {
         console.error('Error sharing:', error);
         toast({
-          title: 'Share failed',
-          description: 'There was an error sharing your album.',
-          variant: 'destructive',
+          title: "Share failed",
+          description: "There was an error sharing your album.",
+          variant: "destructive",
         });
       }
     } else {
       toast({
-        title: 'Share not supported',
+        title: "Share not supported",
         description: "Your browser doesn't support sharing.",
-        variant: 'destructive',
+        variant: "destructive",
       });
     }
   };
@@ -72,15 +74,14 @@ export default function Album({
     <div className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
         <div className="flex space-x-2 overflow-x-auto">
-          <h3 className="self-center font-medium text-2xl mr-2">Album:</h3>
           {Array.from({ length: totalPages }, (_, i) => (
             <Button
               key={i + 1}
               variant={currentPage === i + 1 ? 'default' : 'outline'}
               onClick={() => handlePageChange(i + 1)}
-              className="min-w-[40px]"
+              className="min-w-[100px]"
             >
-              {i + 1}
+              Album {i + 1}
             </Button>
           ))}
         </div>
