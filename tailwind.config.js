@@ -4,13 +4,14 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: 20
+      padding: 20,
     },
     extend: {
       fontFamily: {
         'playfair-display': ['Playfair Display'],
         roboto: 'Roboto Mono, monospace',
         splash: '"Splash", cursive',
+        'cabin-sketch': '"Cabin Sketch", cursive',
       },
       backgroundImage: {
         'auth-background':
