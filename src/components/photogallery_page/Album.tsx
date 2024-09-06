@@ -88,7 +88,12 @@ export default function Album({
           <Share2 className="h-4 w-4" />
         </Button>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div
+        className="grid gap-4"
+        style={{
+          gridTemplateColumns: 'repeat(auto-fill, minmax(9.5625rem, 1fr))',
+        }}
+      >
         {paginatedPhotos.map(photo => (
           <div
             key={photo.id}
