@@ -14,25 +14,25 @@ const MobileNav = ({ closeMenu }: Props) => {
       return { fontWeight: "bold", color: "#1E5C97", backgroundColor: "#eee" };
     }
   };
+
   return (
     <motion.div
       initial={{ x: "-100%", opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: "-100%", opacity: 0 }}
       transition={{ type: "tween" }}
-      className="fixed h-screen inset-0 bg-red-50 z-[1000]"
+      className="fixed h-screen inset-0 bg-red-50 z-[1000] lg:hidden" // Ensure MobileNav only shows on small screens
     >
       <div className="h-[84px] shadow-sm flex items-center justify-between container">
         <img src={logo} alt="" className="h-[29px]" />
-        <XIcon className="size-12  text-primary border-2 rounded-md p-1" onClick={closeMenu}/>
+        <XIcon className="size-12 text-primary border-2 rounded-md p-1" onClick={closeMenu} />
       </div>
       <ul className="flex flex-col">
         {links.map((link, index) => (
-          <li>
+          <li key={index}> {/* Added key here */}
             <NavLink
               onClick={closeMenu}
               style={activeClassStyle}
-              key={index}
               to={link.path}
               className="relative group text-black px-5 py-8 block text-2xl"
             >

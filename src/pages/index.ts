@@ -1,5 +1,4 @@
 import Home from "./Home";
-import About from "./About";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
 import ProductDetails from "./ProductDetails";
@@ -14,10 +13,20 @@ import Shop from "./Shop";
 import VerifyAccount from "./VerifyAccount";
 import VideoGallery from "./VideoGallery";
 import Videos from "./Videos";
+import Aquababy from "./Aquababy";
+import ActiveStart from "./ActiveStart";
+import LearnToTrain from "./LearnToTrain";
+import TrainToTrain from "./TrainToTrain";
+import TrainToCompete from "./TrainToCompete";
+import CompetitiveTeam from "./CompetitiveTeam";
+import ProgressMonitoring from "./ProgressMonitoring";
+import AboutUs from "./AboutUs";
+import WhyUs from "./WhyUs";
+import OurLogo from "./OurLogo";
+import Ethos from "./Ethos";
 
 export {
   Home,
-  About,
   Cart,
   Checkout,
   ProductDetails,
@@ -32,4 +41,16 @@ export {
   VerifyAccount,
   VideoGallery,
   Videos,
+  Aquababy,
+  ActiveStart,
+  LearnToTrain,
+  TrainToTrain,
+  TrainToCompete,
+  CompetitiveTeam,
+  ProgressMonitoring,
+  AboutUs,
+  WhyUs,
+  OurLogo,
+  Ethos,
+
 };

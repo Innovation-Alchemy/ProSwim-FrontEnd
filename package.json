@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass-dev": "sass --watch --update --style=expanded src/SCSS:src/CSS"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -25,6 +26,7 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.0",
     "react-router-dom": "^6.26.1",
+    "sass-dev": "^1.0.13",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"

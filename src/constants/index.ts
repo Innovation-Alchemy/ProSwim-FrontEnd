@@ -1,6 +1,18 @@
 import {
   Home,
-  About,
+  // AA Start
+  Aquababy,
+  ActiveStart,
+  LearnToTrain,
+  TrainToTrain,
+  TrainToCompete,
+  CompetitiveTeam,
+  ProgressMonitoring,
+  AboutUs,
+  WhyUs,
+  OurLogo,
+  Ethos,
+  // AA End
   Cart,
   Checkout,
   ProductDetails,
@@ -18,6 +30,7 @@ import {
 } from "@/pages";
 
 import { homeCarouselImage, homeCarouselImage2 } from "@/assets";
+import path from "path";
 
 export const routes = [
   {
@@ -25,9 +38,51 @@ export const routes = [
     component: Home,
   },
   {
-    path: "/about",
-    component: About,
+    path: "/About-Us",
+    component: AboutUs,
   },
+  {
+    path: "/Why-Us",
+    component: WhyUs,
+  },
+  {
+    path: "/Our-Logo",
+    component: OurLogo,
+  },
+  {
+    path: "/ethos",
+    component: Ethos,
+  },
+  // AA Start
+  {
+    path: "/progress-monitoring",
+    component: ProgressMonitoring,
+  },
+  {
+    path: "/aquababy",
+    component: Aquababy,
+  }
+  , {
+    path: "/active-start",
+    component: ActiveStart,
+  }
+  , {
+    path: "/learn-to-train",
+    component: LearnToTrain,
+  },
+  {
+    path: "/train-to-train",
+    component: TrainToTrain,
+  },
+  {
+    path: "/train-to-compete",
+    component: TrainToCompete,
+  },
+  {
+    path: "/competitive-team",
+    component: CompetitiveTeam,
+  },
+  // AA End
   {
     path: "/cart",
     component: Cart,
@@ -90,13 +145,60 @@ export const authRoutes = [
 ];
 
 export const links = [
-  { path: "/", name: "Home" },
-  { path: "/learn-to-swim", name: "Learn to Swim" },
-  { path: "/shop", name: "Shop" },
-  { path: "/about", name: "About" },
-  { path: "/classes", name: "Classes" },
-  { path: "/album", name: "Album" },
-  { path: "/contact-us", name: "Contact Us" },
+  {
+    path: "/",
+    name: "Home"
+  },
+  {
+    name: "Learn to Swim",
+    pageChildren: [
+      {
+        name: "Levels", subChildren: [
+          { name: "Aquababy", path: "/aquababy" },
+          { name: "Active Start", path: "/active-start" },
+          { name: "Learn To Train", path: "/learn-to-train" },
+          { name: "Train To Train", path: "/train-to-train" },
+          { name: "Train To Compete", path: "/train-to-compete" },
+          { name: "Competitive Team", path: "/competitive-team" }]
+      },
+      { name: "Progress Monitoring", path: "/progress-monitoring" }
+    ]
+  },
+  {
+    path: "/shop",
+    name: "Shop",
+  },
+  {
+    name: "About",
+    pageChildren: [
+      { name: "About Us", path: "/about-us" },  // Add paths for sub-pages
+      { name: "Why Us?", path: "/why-us" },
+      { name: "Our Logo", path: "/our-logo" },
+      { name: "Ethos", path: "/ethos" }
+    ]
+  },
+  {
+    name: "Classes",
+    pageChildren: [
+      { name: "Water Safety", path: "/water-safety" },  // Add paths for sub-pages
+      { name: "Swimming Benefits", path: "/swimming-benefits" },
+      { name: "Learn To Swim", path: "/learn-to-swim" },
+      { name: "Aqua Baby", path: "/aqua-baby" },
+      { name: "Aqua Mermaid", path: "/aqua-mermaid" },
+      { name: "AquaGym", path: "/aquagym" },
+      { name: "Special Classes", path: "/special-classes" }
+    ]
+  },
+  {
+    // path: "/album", AA GO BACK TO
+    name: "Album",
+    pageChildren: ["ProSwimmers", "Wall Of Fame", "Press Releases", "Gallery", "Videos"]
+  },
+  {
+    // path: "/contact-us", AA GO BACK TO
+    name: "Contact Us",
+    pageChildren: ["Locations", "Your Feedback", "FAQ", "Policies", "Rules & procedures"]
+  },
 ];
 
 export const carouselImages = [
