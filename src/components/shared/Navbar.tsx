@@ -6,7 +6,6 @@ import MobileNav from './MobileNav';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MenuIcon } from 'lucide-react';
-import '../../CSS/navbar.css';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -27,7 +26,7 @@ const Navbar = () => {
   }, [toggle]);
 
   return (
-    <div className="shadow-md border-b border-gray-300">
+    <div className="shadow-md border-b border-gray-300 fixed top-0 left-0 right-0 bg-white z-10 ">
       <div className="container h-[84px] flex items-center justify-between gap-10">
         <Link className="w-[9.0625rem] h-7" key="logo" to="/">
           <img src={logo} alt="logo" />

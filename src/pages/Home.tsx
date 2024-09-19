@@ -8,7 +8,7 @@ import { MobilePhotoGallery } from '@/components/homepage/MobilePhotoGallery';
 
 const Home = () => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto pt-[84px]">
       <Carousel />
       <div className="my-16">
         <CoreValues />
