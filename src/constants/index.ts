@@ -180,7 +180,7 @@ export const links = [
   {
     name: "Classes",
     pageChildren: [
-      { name: "Water Safety", path: "/water-safety" },  // Add paths for sub-pages
+      { name: "Water Safety", path: "/water-safety" },
       { name: "Swimming Benefits", path: "/swimming-benefits" },
       { name: "Learn To Swim", path: "/learn-to-swim" },
       { name: "Aqua Baby", path: "/aqua-baby" },
@@ -192,12 +192,25 @@ export const links = [
   {
     // path: "/album", AA GO BACK TO
     name: "Album",
-    pageChildren: ["ProSwimmers", "Wall Of Fame", "Press Releases", "Gallery", "Videos"]
+    pageChildren: [
+      { name: "ProSwimmers", path: "/ProSwimmers" },
+      { name: "Wall Of Fame", path: "/Wall-Of-Fame" },
+      { name: "Press Releases", path: "/Press-Releases" },
+      { name: "Aqua Baby", path: "/aqua-baby" },
+      { name: "Gallery", path: "/Gallery" },
+      { name: "Videos", path: "/Videos" }
+    ]
   },
   {
     // path: "/contact-us", AA GO BACK TO
     name: "Contact Us",
-    pageChildren: ["Locations", "Your Feedback", "FAQ", "Policies", "Rules & procedures"]
+    pageChildren: [
+      { name: "Locations", path: "/Locations" },
+      { name: "Your Feedback", path: "/Your-Feedback" },
+      { name: "FAQ", path: "/FAQ" },
+      { name: "Policies", path: "/Policies" },
+      { name: "Rules & procedures", path: "/Rules-&-procedures" },
+    ]
   },
 ];
 

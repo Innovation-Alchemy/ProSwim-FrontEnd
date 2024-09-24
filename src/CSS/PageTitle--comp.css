@@ -1,0 +1,70 @@
+.titleContainer {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+.titleContainer .mainTitle,
+.titleContainer .subTitle {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #1E5C97;
+  text-align: center;
+}
+.titleContainer .mainTitle--part1 {
+  color: #7e7e7e;
+}
+.titleContainer .mainTitle--part2 {
+  color: #1E5C97;
+}
+.titleContainer .subTitle,
+.titleContainer .date {
+  width: fit-content;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+}
+.titleContainer .subTitle {
+  font-family: "Oooh Baby";
+  color: #1E5C97;
+}
+.titleContainer .date {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #7E7E7E;
+}
+.titleContainer span {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 180%;
+  height: 2px;
+  background-color: #7e7e7e;
+}
+.titleContainer span::before, .titleContainer span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 2px;
+  background-color: #7e7e7e;
+}
+.titleContainer span::before {
+  width: 75%;
+  bottom: -20px;
+}
+.titleContainer span::after {
+  width: 40%;
+  bottom: -40px;
+}
+
+/*# sourceMappingURL=PageTitle--comp.css.map */

@@ -1,0 +1,81 @@
+.titleContainer {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 20px;
+
+  .mainTitle,
+  .subTitle {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #1E5C97;
+    text-align: center;
+  }
+
+  .mainTitle--part1 {
+    color: #7e7e7e;
+  }
+
+  .mainTitle--part2 {
+    color: #1E5C97;
+  }
+
+  .subTitle,
+  .date {
+    width: fit-content;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .subTitle {
+    font-family: 'Oooh Baby';
+    color: #1E5C97;
+  }
+
+  .date {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #7E7E7E;
+
+  }
+
+
+  span {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 180%;
+    height: 2px;
+    background-color: #7e7e7e;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 2px;
+      background-color: #7e7e7e;
+    }
+
+    &::before {
+      width: 75%;
+      bottom: -20px;
+    }
+
+    &::after {
+      width: 40%;
+      bottom: -40px;
+    }
+  }
+}

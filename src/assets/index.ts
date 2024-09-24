@@ -61,6 +61,15 @@ import shopItem2 from './shop/shop_item2.svg';
 import shopItem3 from './shop/shop_item3.svg';
 import shopItem4 from './shop/shop_item4.svg';
 
+// About Us
+import WhyUs_image1 from './aboutus/WhyUs_image1.png';
+import WhyUs_image2 from './aboutus/WhyUs_image2.png';
+import WhyUs_image3 from './aboutus/WhyUs_image3.png';
+import ethosSVG1 from './aboutus/ethosSVG1.svg';
+import ethosSVG2 from './aboutus/ethosSVG2.svg';
+import ethosSVG3 from './aboutus/ethosSVG3.svg';
+import ethosSVG4 from './aboutus/ethosSVG4.svg';
+
 export {
   // Authentication
   authenticationBackground,
@@ -124,4 +133,12 @@ export {
   shopItem2,
   shopItem3,
   shopItem4,
+  // About Us
+  WhyUs_image1,
+  WhyUs_image2,
+  WhyUs_image3,
+  ethosSVG1,
+  ethosSVG2,
+  ethosSVG3,
+  ethosSVG4,
 };

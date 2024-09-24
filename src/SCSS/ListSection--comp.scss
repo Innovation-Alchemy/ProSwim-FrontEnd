@@ -1,0 +1,43 @@
+.ListSection--cardsContainer {
+  gap: 30px 20px;
+
+  .card {
+    gap: 15px;
+    background-color: #eee;
+    width: 243px;
+    border-radius: 20px;
+    padding: 15px 20px;
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 50%;
+      object-fit: contain;
+      transition: all .3s ease;
+    }
+
+    h2 {
+      // font-family: 'Roboto'; // AA GO BACK TO
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #1E5C97;
+    }
+
+    p {
+      // font-family: 'Roboto'; // AA GO BACK TO
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+
+  }
+}

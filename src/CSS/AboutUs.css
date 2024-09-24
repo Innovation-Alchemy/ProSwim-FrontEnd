@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.AboutUsPage {
+  padding-top: 84px;
+}
+.AboutUsPage .heroSec {
+  height: 50vh;
+  width: 100vw;
+}
+.AboutUsPage .heroSec .bgContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.AboutUsPage .heroSec .bgContainer .bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.AboutUsPage .heroSec .bgContainer .heroTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "Cabin Sketch";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  color: #FFFFFF;
+}
+.AboutUsPage .section {
+  margin: 8rem 0;
+  padding: 0 30px;
+}
+.AboutUsPage .section .sectionTitle {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  text-decoration-line: underline;
+  color: #000;
+  margin-bottom: 2rem;
+}
+.AboutUsPage .section .text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.AboutUsPage .section .text:last-child {
+  margin-bottom: 0;
+}
+.AboutUsPage .section .list li {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  list-style-type: numbers;
+}
+
+/*# sourceMappingURL=AboutUs.css.map */
