@@ -3,6 +3,9 @@
   width: 100vw;
   max-width: 100% !important;
 }
+.HeroTextBg h1 {
+  width: 80%;
+}
 .HeroTextBg .bgContainer {
   width: 100%;
   height: 100%;

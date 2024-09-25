@@ -1,6 +1,7 @@
 import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { authRoutes, routes } from "./constants";
 import Navbar from "./components/shared/Navbar";
+import Footer from "./components/shared/Footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
           <>
             <Navbar />
             <Outlet />
+            <Footer />
           </>
         }
       >

@@ -1,0 +1,60 @@
+.FooterPage {
+  z-index: 5;
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+.FooterPage .bg {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.FooterPage .content {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 4rem;
+}
+.FooterPage .content .upperBox {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.FooterPage .content .upperBox::after {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.FooterPage .content .upperBox .upperPart {
+  font-size: 20px;
+}
+.FooterPage .content .upperBox .upperPart h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.FooterPage .content .upperBox .upperPart--last p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+}
+.FooterPage .content .lowerBox .socialLogo {
+  width: 36px;
+  height: 36px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=footer.css.map */

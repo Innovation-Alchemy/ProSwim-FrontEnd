@@ -1,6 +1,6 @@
 import {
   Home,
-  // AA Start
+  // AA Start -----------
   Aquababy,
   ActiveStart,
   LearnToTrain,
@@ -8,11 +8,21 @@ import {
   TrainToCompete,
   CompetitiveTeam,
   ProgressMonitoring,
+  // AboutUs:
   AboutUs,
   WhyUs,
   OurLogo,
   Ethos,
-  // AA End
+  // Classes:
+  WaterSafety,
+  // SwimmingBenefits,
+  LearnToSwim,
+  // AquaBaby, // AA GO BACK TO repeated link
+  AquaMermaid,
+  AquaGym,
+  SpecialClasses,
+
+  // AA End -----------
   Cart,
   Checkout,
   ProductDetails,
@@ -20,7 +30,6 @@ import {
   Login,
   Signup,
   Feedback,
-  LearnSwim,
   PhotoGallery,
   ProSwimmers,
   Shop,
@@ -82,6 +91,35 @@ export const routes = [
     path: "/competitive-team",
     component: CompetitiveTeam,
   },
+  // Classes:
+  {
+    path: "/water-safety",
+    component: WaterSafety,
+  },
+  // {
+  //   path: "/swimming-benefits",
+  //   component: SwimmingBenefits,
+  // },
+  // {
+  //   path: "/aqua-baby",
+  // component: AquaBaby, // AA GO BACK TO repeated link
+  // },
+  {
+    path: "/learn-to-swim",
+    component: LearnToSwim,
+  },
+  {
+    path: "/aqua-mermaid",
+    component: AquaMermaid,
+  },
+  {
+    path: "/aquagym",
+    component: AquaGym,
+  },
+  {
+    path: "/special-classes",
+    component: SpecialClasses,
+  },
   // AA End
   {
     path: "/cart",
@@ -105,7 +143,7 @@ export const routes = [
   },
   {
     path: "/learn-to-swim",
-    component: LearnSwim,
+    component: LearnToSwim,
   },
   {
     path: "/photo-gallery",
@@ -183,14 +221,13 @@ export const links = [
       { name: "Water Safety", path: "/water-safety" },
       { name: "Swimming Benefits", path: "/swimming-benefits" },
       { name: "Learn To Swim", path: "/learn-to-swim" },
-      { name: "Aqua Baby", path: "/aqua-baby" },
+      { name: "Aqua Baby", path: "/aquababy" },
       { name: "Aqua Mermaid", path: "/aqua-mermaid" },
-      { name: "AquaGym", path: "/aquagym" },
-      { name: "Special Classes", path: "/special-classes" }
+      { name: "AquaGym", path: "/aquagym" }, // AA GO BACK TO should have children
+      { name: "Special Classes", path: "/special-classes" } // AA GO BACK TO should have children
     ]
   },
   {
-    // path: "/album", AA GO BACK TO
     name: "Album",
     pageChildren: [
       { name: "ProSwimmers", path: "/ProSwimmers" },
@@ -202,7 +239,6 @@ export const links = [
     ]
   },
   {
-    // path: "/contact-us", AA GO BACK TO
     name: "Contact Us",
     pageChildren: [
       { name: "Locations", path: "/Locations" },

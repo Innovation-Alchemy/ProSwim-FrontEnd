@@ -9,7 +9,7 @@ import footerLogo from './footer/footer_X.svg';
 import facebookIcon from './footer/footer_facebook.svg';
 import instagramIcon from './footer/footer_instagram.svg';
 import youtubeIcon from './footer/footer_youtube.svg';
-import footerBackground from './footer/footer_img.jfif';
+import footerBackground from './footer/footer_img.jpg';
 
 // Gallery
 import galleryPhoto1 from './gallery/gallery_photo1.svg';
@@ -69,6 +69,11 @@ import ethosSVG1 from './aboutus/ethosSVG1.svg';
 import ethosSVG2 from './aboutus/ethosSVG2.svg';
 import ethosSVG3 from './aboutus/ethosSVG3.svg';
 import ethosSVG4 from './aboutus/ethosSVG4.svg';
+
+// Classes:
+import LearnToSwimGif1 from './classes/LearnToSwimGif1.gif';
+import LearnToSwimGif2 from './classes/LearnToSwimGif2.gif';
+
 
 export {
   // Authentication
@@ -141,4 +146,8 @@ export {
   ethosSVG2,
   ethosSVG3,
   ethosSVG4,
+  // Classes:
+  LearnToSwimGif1,
+  LearnToSwimGif2,
+
 };

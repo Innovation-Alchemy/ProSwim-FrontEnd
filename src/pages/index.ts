@@ -6,7 +6,6 @@ import Dashboard from "./Dashboard";
 import Login from "./Login";
 import Signup from "./Signup";
 import Feedback from "./Feedback";
-import LearnSwim from "./LearnSwim";
 import PhotoGallery from "./PhotoGallery";
 import ProSwimmers from "./ProSwimmers";
 import Shop from "./Shop";
@@ -24,6 +23,14 @@ import AboutUs from "./AboutUs";
 import WhyUs from "./WhyUs";
 import OurLogo from "./OurLogo";
 import Ethos from "./Ethos";
+import WaterSafety from "./WaterSafety";
+import SwimmingBenefits from "./SwimmingBenefits";
+import LearnToSwim from "./LearnToSwim";
+// import AquaBaby from "./AquaBaby"; // AA GO BACK TO repeated link
+import AquaMermaid from "./AquaMermaid";
+import AquaGym from "./AquaGym";
+import SpecialClasses from "./SpecialClasses";
+
 
 export {
   Home,
@@ -34,7 +41,6 @@ export {
   Login,
   Signup,
   Feedback,
-  LearnSwim,
   PhotoGallery,
   ProSwimmers,
   Shop,
@@ -48,9 +54,17 @@ export {
   TrainToCompete,
   CompetitiveTeam,
   ProgressMonitoring,
+  // AboutUs:
   AboutUs,
   WhyUs,
   OurLogo,
   Ethos,
-
+  // classes:
+  WaterSafety,
+  SwimmingBenefits,
+  LearnToSwim,
+  // AquaBaby, // AA GO BACK TO repeated link
+  AquaMermaid,
+  AquaGym,
+  SpecialClasses,
 };
