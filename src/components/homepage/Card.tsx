@@ -6,9 +6,8 @@ type CardProps = {
 };
 
 const Card: React.FC<CardProps> = ({ title, text, img, isRotated = false }) => {
-  const imgClass = `w-full h-[20.9375rem] object-cover ${
-    isRotated ? "-scale-x-100" : ""
-  }`;
+  const imgClass = `w-full h-[32vh] object-cover ${isRotated ? "-scale-x-100" : ""
+    }`;
 
   return (
     <div
@@ -17,11 +16,11 @@ const Card: React.FC<CardProps> = ({ title, text, img, isRotated = false }) => {
          shadow-2xl rounded-3xl overflow-hidden`}
     >
       <img className={imgClass} src={img} alt={title} />
-      <div className="flex flex-col items-start p-8 flex-grow">
-        <h3 className="font-bold capitalize text-left text-xl leading-6">
+      <div className="flex flex-col items-start px-8 py-6 flex-grow">
+        <h3 className="mb-4 font-bold capitalize text-center w-full text-[24px] leading-6 font-[Playfair-Display]">
           {title.trim().toLowerCase()}
         </h3>
-        <p className="font-roboto text-sm font-normal leading-relaxed mt-2 text-[#858585]">
+        <p className="font-roboto text-sm text-center leading-[18px] font-normal leading-relaxed text-[#858585]">
           {text}
         </p>
       </div>

@@ -30,13 +30,13 @@ const LocationImg: React.FC<LocationImgProps> = ({
     >
       <img src={src} alt={title} className="w-full h-full object-cover" />
 
-      <h1 className="absolute top-0 left-0 text-white px-2 py-1 rounded font-bold text-[2.5rem] font-playfair-display leading-[3.3325rem] ml-[2.4375rem]">
+      <h1 className="absolute top-0 left-0 text-white px-2 py-1 rounded font-bold text-[2.5rem] font-playfair-display leading-[3.3325rem] ml-[2.4375rem] z-[5]">
         {title}
       </h1>
 
       {/* Overlay and Info Boxes */}
       <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 space-y-4">
-        <div className="ml-10 flex flex-col gap-7 justify-center items-start h-full">
+        <div className="pt-[50px] ml-10 flex flex-col gap-7 justify-center items-start h-full">
           {/* Supervisor Info Box */}
           <div className="bg-white text-black p-4 rounded shadow-lg transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out">
             <p>
