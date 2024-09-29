@@ -6,14 +6,14 @@ import HeroTextBg from "@/components/shared/HeroTextBg";
 export default function AquaGym() {
 
   return <div className="AquaGymPage pt-[84px] pb-20">
-    <HeroTextBg title="AquaGym">
+    <HeroTextBg title="Aqua Gym">
     </HeroTextBg>
     <div className="content flex flex-col gap-12 mt-10 pl-10 pr-10 ">
       <div>
         <h3 className="mb-6 text-[25px] underline font-bold font-[Playfair-Display]">Overview:</h3>
         <p>ProSwim provides a variety of AquaGym classes for all ages.</p>
       </div>
-      <div className="flex "></div>
+      <div className="flex"></div>
 
 
       <div>

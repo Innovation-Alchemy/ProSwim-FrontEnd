@@ -9,10 +9,6 @@ export default function WaterSafety() {
     <HeroTextBg title="Water Safety">
     </HeroTextBg>
 
-    {/* font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700; */}
-
     <div className="content flex flex-col mt-10 pl-10 pr-10">
       <h3 className="mb-6 text-[22px] underline font-bold font-[Roboto]">Water Safety</h3>
       <p className="mb-6 text-[16px]">It’s something your child will learn and retain for the entirety of their life. It’s an ability they will have even as an elderly person.

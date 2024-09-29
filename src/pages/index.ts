@@ -26,7 +26,6 @@ import Ethos from "./Ethos";
 import WaterSafety from "./WaterSafety";
 import SwimmingBenefits from "./SwimmingBenefits";
 import LearnToSwim from "./LearnToSwim";
-// import AquaBaby from "./AquaBaby"; // AA GO BACK TO repeated link
 import AquaMermaid from "./AquaMermaid";
 import AquaGym from "./AquaGym";
 import SpecialClasses from "./SpecialClasses";
@@ -63,7 +62,6 @@ export {
   WaterSafety,
   SwimmingBenefits,
   LearnToSwim,
-  // AquaBaby, // AA GO BACK TO repeated link
   AquaMermaid,
   AquaGym,
   SpecialClasses,

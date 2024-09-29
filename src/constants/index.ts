@@ -15,9 +15,8 @@ import {
   Ethos,
   // Classes:
   WaterSafety,
-  // SwimmingBenefits,
+  SwimmingBenefits,
   LearnToSwim,
-  // AquaBaby, // AA GO BACK TO repeated link
   AquaMermaid,
   AquaGym,
   SpecialClasses,
@@ -96,14 +95,10 @@ export const routes = [
     path: "/water-safety",
     component: WaterSafety,
   },
-  // {
-  //   path: "/swimming-benefits",
-  //   component: SwimmingBenefits,
-  // },
-  // {
-  //   path: "/aqua-baby",
-  // component: AquaBaby, // AA GO BACK TO repeated link
-  // },
+  {
+    path: "/swimming-benefits",
+    component: SwimmingBenefits,
+  },
   {
     path: "/learn-to-swim",
     component: LearnToSwim,
@@ -223,7 +218,7 @@ export const links = [
       { name: "Learn To Swim", path: "/learn-to-swim" },
       { name: "Aqua Baby", path: "/aquababy" },
       { name: "Aqua Mermaid", path: "/aqua-mermaid" },
-      { name: "AquaGym", path: "/aquagym" }, // AA GO BACK TO should have children
+      { name: "Aqua Gym", path: "/aquagym" }, // AA GO BACK TO should have children
       { name: "Special Classes", path: "/special-classes" } // AA GO BACK TO should have children
     ]
   },
