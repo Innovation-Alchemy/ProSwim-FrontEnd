@@ -4,15 +4,21 @@
 .ListSection--cardsContainer .card {
   gap: 15px;
   background-color: #eee;
-  width: 243px;
+  min-height: 34vh;
+  min-width: 243px;
+  max-width: 30%;
   border-radius: 20px;
   padding: 15px 20px;
+}
+.ListSection--cardsContainer .card:hover {
+  cursor: text;
 }
 .ListSection--cardsContainer .card:hover img {
   transform: scale(1.05);
 }
 .ListSection--cardsContainer .card img {
-  width: 50%;
+  width: 8rem;
+  aspect-ratio: 1/1;
   object-fit: contain;
   transition: all 0.3s ease;
 }
@@ -23,14 +29,21 @@
   line-height: 23px;
   text-align: center;
   color: #1E5C97;
+  min-width: fit-content;
 }
 .ListSection--cardsContainer .card p {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  text-align: center;
+  min-width: fit-content;
   color: rgba(0, 0, 0, 0.6);
+}
+.ListSection--cardsContainer .card--Horiz {
+  min-height: auto;
+}
+.ListSection--cardsContainer .card--Horiz h2 {
+  margin-bottom: 0.75rem;
 }
 
 /*# sourceMappingURL=ListSection--comp.css.map */
