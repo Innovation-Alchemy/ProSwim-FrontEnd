@@ -7,7 +7,7 @@ import HeroTextBg from "@/components/shared/HeroTextBg";
 export default function AquaBaby() {
 
   return <div className="AquaBabyPage pt-[84px] pb-20 text-[18px]">
-    <HeroTextBg title="AquaBaby">
+    <HeroTextBg title="Aqua Baby">
     </HeroTextBg>
     <div className="content flex flex-col gap-12 mt-10 pl-10 pr-10 ">
 

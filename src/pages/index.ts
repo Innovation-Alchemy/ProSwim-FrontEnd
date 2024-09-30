@@ -29,6 +29,10 @@ import LearnToSwim from "./LearnToSwim";
 import AquaMermaid from "./AquaMermaid";
 import AquaGym from "./AquaGym";
 import SpecialClasses from "./SpecialClasses";
+import PrivateClasses from "./PrivateClasses";
+import GroupClasses from "./GroupClasses";
+import Adults from "./Adults";
+import LadiesOnly from "./LadiesOnly";
 
 
 export {
@@ -65,4 +69,8 @@ export {
   AquaMermaid,
   AquaGym,
   SpecialClasses,
+  PrivateClasses,
+  GroupClasses,
+  Adults,
+  LadiesOnly,
 };

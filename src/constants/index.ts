@@ -20,6 +20,10 @@ import {
   AquaMermaid,
   AquaGym,
   SpecialClasses,
+  PrivateClasses,
+  GroupClasses,
+  Adults,
+  LadiesOnly,
 
   // AA End -----------
   Cart,
@@ -114,6 +118,22 @@ export const routes = [
   {
     path: "/special-classes",
     component: SpecialClasses,
+  },
+  {
+    path: "/private-classes",
+    component: PrivateClasses,
+  },
+  {
+    path: "/group-classes",
+    component: GroupClasses,
+  },
+  {
+    path: "/adults",
+    component: Adults,
+  },
+  {
+    path: "/ladies-only",
+    component: LadiesOnly,
   },
   // AA End
   {
@@ -215,11 +235,15 @@ export const links = [
     pageChildren: [
       { name: "Water Safety", path: "/water-safety" },
       { name: "Swimming Benefits", path: "/swimming-benefits" },
+      { name: "Private Classes", path: "/private-classes" },
+      { name: "Group Classes", path: "/group-classes" },
       { name: "Learn To Swim", path: "/learn-to-swim" },
       { name: "Aqua Baby", path: "/aquababy" },
       { name: "Aqua Mermaid", path: "/aqua-mermaid" },
       { name: "Aqua Gym", path: "/aquagym" }, // AA GO BACK TO should have children
-      { name: "Special Classes", path: "/special-classes" } // AA GO BACK TO should have children
+      { name: "Special Classes", path: "/special-classes" }, // AA GO BACK TO should have children
+      { name: "Adults", path: "/adults" },
+      { name: "Ladies Only", path: "/ladies-only" },
     ]
   },
   {

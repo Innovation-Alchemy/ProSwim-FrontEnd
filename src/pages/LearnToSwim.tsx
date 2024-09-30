@@ -6,11 +6,11 @@ import HeroTextBg from "@/components/shared/HeroTextBg";
 
 export default function LearnToSwim() {
 
-  return <div className="LearnToSwimPage pt-[84px] pb-20">
+  return <div className="LearnToSwimPage pt-[84px] pb-20 text-[18px]">
     <HeroTextBg title="Learn To Swim">
     </HeroTextBg>
 
-    <div className="content flex flex-col gap-12 mt-10 pl-10 pr-10 ">
+    <div className="content flex flex-col gap-12 mt-10 pl-10 pr-10">
       <div>
         <h3 className="mb-6 text-[22px] underline font-bold font-[Roboto]">Overview:</h3>
         <div className="flex flex-col gap-4">
@@ -37,7 +37,7 @@ export default function LearnToSwim() {
       {/* end of cardContainer */}
       <div>
         <h3 className="mb-6 text-[22px] underline font-bold font-[Roboto]">What to bring?</h3>
-        <ul className="list-decimal flex flex-col gap-2 pl-4 text-[16px]">
+        <ul className="list-decimal flex flex-col gap-2 pl-4">
           <li>Come to class dressed and ready for the pool.</li>
           <li>Clothes, diaper bags (in case needed) and other personal items can be stored in the locker rooms, leave your valuables at home.</li>
           <li>Sandals or flip-flops are permitted in the pool area; No street shoes permitted.</li>

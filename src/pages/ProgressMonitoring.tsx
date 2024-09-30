@@ -15,7 +15,7 @@ export default function ProgressMonitoring() {
     <div className="content flex flex-col mt-10 pl-10 pr-10">
       <h3 className="mb-6 text-[22px] underline font-bold">Progress Monitoring</h3>
 
-      <ul className="list-disc flex flex-col gap-4 pl-4 text-[16px]">
+      <ul className="list-disc flex flex-col gap-4 pl-4 text-[18px]">
         <li>ProSwim LEARN TO SWIM program is all about developing confident and competent swimmers through fun & enjoyment and Learn to Swim levels.</li>
         <li>Each level has a clear set of targets for the swimmer to meet so they can get to the next level.</li>
         <li>ProSwim academy highly recommends that children don’t just stop going to the swimming classes once they can swim, as increasing their competence in the water helps to make sure they can keep themselves safe.</li>
@@ -34,7 +34,7 @@ export default function ProgressMonitoring() {
       </ul>
 
       <h3 className="mt-10 mb-6 text-[22px] underline font-bold">It’s highly important to keep in mind that each child learns differently..!</h3>
-      <ul className="list-disc flex flex-col gap-4 pl-4 text-[16px]">
+      <ul className="list-disc flex flex-col gap-4 pl-4 text-[18px]">
         <li>Each child develops confidence and learns skills at his/her own pace. Twins may begin lessons at 6 months; one may be floating on her back with only few lessons while the other might take her longer.</li>
         <li>A child’s motor skills will play a critical role in the swimmer’s progress. Naturally, as children get older their motor skills improve.</li>
         <li>Previous positive experiences in the water and additional practice opportunities will increase the child’s improvement rate, while any previous negative experience can certainly hinder the child’s ability to progress at a normal rate.</li>

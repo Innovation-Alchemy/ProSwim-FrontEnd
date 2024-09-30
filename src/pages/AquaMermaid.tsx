@@ -4,8 +4,7 @@
 import HeroTextBg from "@/components/shared/HeroTextBg";
 
 export default function AquaMermaid() {
-  // AA GO BACK TO NO PAGE IN UI ERROR
-  return <div className="AquaMermaidPage pt-[84px] pb-20">
+  return <div className="AquaMermaidPage pt-[84px] pb-20 text-[18px]">
     <HeroTextBg title="Aqua Mermaid">
     </HeroTextBg>
     <div className="content flex flex-col gap-2 mt-10 pl-10 pr-10 ">
@@ -53,7 +52,7 @@ export default function AquaMermaid() {
         <div>
           <h3 className="mb-6 text-[24px] underline font-bold font-[Playfair-Display]">Class Ettiquette:</h3>
           <p>Mermaid class is all about fun but still we need to keep in mind few rules to have a great memorable experience…</p>
-          <h5 className="mb-4 mt-6 text-[16px] font-bold">General Guidelines:</h5>
+          <h5 className="mb-4 mt-6 font-bold">General Guidelines:</h5>
           <ul className="list-disc flex flex-col gap-1 pl-4">
             <li>Do not enter the pool if you have a communicable disease or open cut.</li>
             <li>Do not bring food, drink, gum or tobacco into the pool.</li>
@@ -65,7 +64,7 @@ export default function AquaMermaid() {
             <li>This is a shared space for multiple uses. Please be mindful of other people's needs.</li>
             <li>Please be polite & show good manners to everyone.</li>
           </ul>
-          <h5 className="mb-4 mt-6 text-[16px] font-bold">Specific Guidelines for the mermaid class:</h5>
+          <h5 className="mb-4 mt-6 font-bold">Specific Guidelines for the mermaid class:</h5>
           <ul className="list-disc flex flex-col gap-1 pl-4">
             <li>Be on time!! Showing up late may interrupt the class and distract your classmates. In addition, you'll miss essential warm-ups if you don't show up on time...It is also important to be on time in order to choose your mermaid tail and try what suits you best.</li>
             <li>Come prepared & ready!! Bring a bag that has everything u need such as dry clothes, towel, water bottle, toiletries, snacks, and other things…</li>
