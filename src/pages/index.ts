@@ -12,7 +12,8 @@ import Shop from "./Shop";
 import VerifyAccount from "./VerifyAccount";
 import VideoGallery from "./VideoGallery";
 import Videos from "./Videos";
-import Aquababy from "./Aquababy";
+import Aquababy_classes from "./Aquababy_classes";
+import Aquababy_levels from "./Aquababy_levels";
 import ActiveStart from "./ActiveStart";
 import LearnToTrain from "./LearnToTrain";
 import TrainToTrain from "./TrainToTrain";
@@ -33,6 +34,7 @@ import PrivateClasses from "./PrivateClasses";
 import GroupClasses from "./GroupClasses";
 import Adults from "./Adults";
 import LadiesOnly from "./LadiesOnly";
+import LearnToTrain_levels from "./LearnToTrain_levels";
 
 
 export {
@@ -50,7 +52,8 @@ export {
   VerifyAccount,
   VideoGallery,
   Videos,
-  Aquababy,
+  Aquababy_classes,
+  Aquababy_levels,
   ActiveStart,
   LearnToTrain,
   TrainToTrain,
@@ -73,4 +76,6 @@ export {
   GroupClasses,
   Adults,
   LadiesOnly,
+  // levels:
+  LearnToTrain_levels,
 };

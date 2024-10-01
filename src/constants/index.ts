@@ -1,9 +1,10 @@
 import {
   Home,
   // AA Start -----------
-  Aquababy,
+  // levels:
+  Aquababy_levels,
   ActiveStart,
-  LearnToTrain,
+  LearnToTrain_levels,
   TrainToTrain,
   TrainToCompete,
   CompetitiveTeam,
@@ -17,6 +18,7 @@ import {
   WaterSafety,
   SwimmingBenefits,
   LearnToSwim,
+  Aquababy_classes,
   AquaMermaid,
   AquaGym,
   SpecialClasses,
@@ -43,6 +45,7 @@ import {
 
 import { homeCarouselImage, homeCarouselImage2 } from "@/assets";
 import path from "path";
+// import AquaBaby from "@/pages/Aquababy";
 
 export const routes = [
   {
@@ -50,89 +53,94 @@ export const routes = [
     component: Home,
   },
   {
-    path: "/About-Us",
+    path: "/about-us",
     component: AboutUs,
   },
   {
-    path: "/Why-Us",
+    path: "/about-us/Why-Us",
     component: WhyUs,
   },
   {
-    path: "/Our-Logo",
+    path: "/about-us/Our-Logo",
     component: OurLogo,
   },
   {
-    path: "/ethos",
+    path: "/about-us/ethos",
     component: Ethos,
   },
   // AA Start
   {
-    path: "/progress-monitoring",
+    path: "/learn-to-swim/progress-monitoring",
     component: ProgressMonitoring,
   },
   {
-    path: "/aquababy",
-    component: Aquababy,
+    path: "/learn-to-swim/levels/aquababy",
+    component: Aquababy_levels, // AA CHANGE cuz diff comp GO BACK TO
   }
   , {
-    path: "/active-start",
+    path: "/learn-to-swim/levels/active-start",
     component: ActiveStart,
   }
   , {
-    path: "/learn-to-train",
-    component: LearnToTrain,
+    path: "/learn-to-swim/levels/learn-to-train",
+    component: LearnToTrain_levels,
   },
   {
-    path: "/train-to-train",
+    path: "/learn-to-swim/levels/train-to-train",
     component: TrainToTrain,
   },
   {
-    path: "/train-to-compete",
+    path: "/learn-to-swim/levels/train-to-compete",
     component: TrainToCompete,
   },
   {
-    path: "/competitive-team",
+    path: "/learn-to-swim/levels/competitive-team",
     component: CompetitiveTeam,
   },
   // Classes:
   {
-    path: "/water-safety",
+    path: "/classes/water-safety",
     component: WaterSafety,
   },
   {
-    path: "/swimming-benefits",
+    path: "/classes/swimming-benefits",
     component: SwimmingBenefits,
   },
   {
-    path: "/learn-to-swim",
+    path: "/classes/learn-to-swim",
     component: LearnToSwim,
   },
   {
-    path: "/aqua-mermaid",
+    path: "/classes/aquababy",
+    component: Aquababy_classes,
+  },
+
+  {
+    path: "/classes/aqua-mermaid",
     component: AquaMermaid,
   },
   {
-    path: "/aquagym",
+    path: "/classes/aquagym",
     component: AquaGym,
   },
   {
-    path: "/special-classes",
+    path: "/classes/special-classes",
     component: SpecialClasses,
   },
   {
-    path: "/private-classes",
+    path: "/classes/private-classes",
     component: PrivateClasses,
   },
   {
-    path: "/group-classes",
+    path: "/classes/group-classes",
     component: GroupClasses,
   },
   {
-    path: "/adults",
+    path: "/classes/adults",
     component: Adults,
   },
   {
-    path: "/ladies-only",
+    path: "/classes/ladies-only",
     component: LadiesOnly,
   },
   // AA End
@@ -141,11 +149,11 @@ export const routes = [
     component: Cart,
   },
   {
-    path: "/checkout",
+    path: "/shop/checkout",
     component: Checkout,
   },
   {
-    path: "/product-details",
+    path: "/shop/product-details",
     component: ProductDetails,
   },
   {
@@ -207,14 +215,14 @@ export const links = [
     pageChildren: [
       {
         name: "Levels", subChildren: [
-          { name: "Aquababy", path: "/aquababy" },
-          { name: "Active Start", path: "/active-start" },
-          { name: "Learn To Train", path: "/learn-to-train" },
-          { name: "Train To Train", path: "/train-to-train" },
-          { name: "Train To Compete", path: "/train-to-compete" },
-          { name: "Competitive Team", path: "/competitive-team" }]
+          { name: "Aquababy", path: "/learn-to-swim/levels/aquababy" },
+          { name: "Active Start", path: "/learn-to-swim/levels/active-start" },
+          { name: "Learn To Train", path: "/learn-to-swim/levels/learn-to-train" },
+          { name: "Train To Train", path: "/learn-to-swim/levels/train-to-train" },
+          { name: "Train To Compete", path: "/learn-to-swim/levels/train-to-compete" },
+          { name: "Competitive Team", path: "/learn-to-swim/levels/competitive-team" }]
       },
-      { name: "Progress Monitoring", path: "/progress-monitoring" }
+      { name: "Progress Monitoring", path: "/learn-to-swim/progress-monitoring" }
     ]
   },
   {
@@ -222,49 +230,49 @@ export const links = [
     name: "Shop",
   },
   {
-    name: "About",
+    name: "About Us",
     pageChildren: [
       { name: "About Us", path: "/about-us" },  // Add paths for sub-pages
-      { name: "Why Us?", path: "/why-us" },
-      { name: "Our Logo", path: "/our-logo" },
-      { name: "Ethos", path: "/ethos" }
+      { name: "Why Us?", path: "/about-us/why-us" },
+      { name: "Our Logo", path: "/about-us/our-logo" },
+      { name: "Ethos", path: "/about-us/ethos" }
     ]
   },
   {
     name: "Classes",
     pageChildren: [
-      { name: "Water Safety", path: "/water-safety" },
-      { name: "Swimming Benefits", path: "/swimming-benefits" },
-      { name: "Private Classes", path: "/private-classes" },
-      { name: "Group Classes", path: "/group-classes" },
-      { name: "Learn To Swim", path: "/learn-to-swim" },
-      { name: "Aqua Baby", path: "/aquababy" },
-      { name: "Aqua Mermaid", path: "/aqua-mermaid" },
-      { name: "Aqua Gym", path: "/aquagym" }, // AA GO BACK TO should have children
-      { name: "Special Classes", path: "/special-classes" }, // AA GO BACK TO should have children
-      { name: "Adults", path: "/adults" },
-      { name: "Ladies Only", path: "/ladies-only" },
+      { name: "Water Safety", path: "/classes/water-safety" },
+      { name: "Swimming Benefits", path: "/classes/swimming-benefits" },
+      { name: "Private Classes", path: "/classes/private-classes" },
+      { name: "Group Classes", path: "/classes/group-classes" },
+      { name: "Learn To Swim", path: "/classes/learn-to-swim" },
+      { name: "Aqua Baby", path: "/classes/aquababy" },
+      { name: "Aqua Mermaid", path: "/classes/aqua-mermaid" },
+      { name: "Aqua Gym", path: "/classes/aquagym" }, // AA GO BACK TO should have children
+      { name: "Special Classes", path: "/classes/special-classes" }, // AA GO BACK TO should have children
+      { name: "Adults", path: "/classes/adults" },
+      { name: "Ladies Only", path: "/classes/ladies-only" },
     ]
   },
   {
     name: "Album",
     pageChildren: [
-      { name: "ProSwimmers", path: "/ProSwimmers" },
-      { name: "Wall Of Fame", path: "/Wall-Of-Fame" },
-      { name: "Press Releases", path: "/Press-Releases" },
-      { name: "Aqua Baby", path: "/aqua-baby" },
-      { name: "Gallery", path: "/Gallery" },
-      { name: "Videos", path: "/Videos" }
+      { name: "ProSwimmers", path: "/Album/ProSwimmers" },
+      { name: "Wall Of Fame", path: "/Album/Wall-Of-Fame" },
+      { name: "Press Releases", path: "/Album/Press-Releases" },
+      { name: "Aqua Baby", path: "/Album/aqua-baby" },
+      { name: "Gallery", path: "/Album/Gallery" },
+      { name: "Videos", path: "/Album/Videos" }
     ]
   },
   {
     name: "Contact Us",
     pageChildren: [
-      { name: "Locations", path: "/Locations" },
-      { name: "Your Feedback", path: "/Your-Feedback" },
-      { name: "FAQ", path: "/FAQ" },
-      { name: "Policies", path: "/Policies" },
-      { name: "Rules & procedures", path: "/Rules-&-procedures" },
+      { name: "Locations", path: "/Contact-Us/Locations" },
+      { name: "Your Feedback", path: "/Contact-Us/Your-Feedback" },
+      { name: "FAQ", path: "/Contact-Us/FAQ" },
+      { name: "Policies", path: "/Contact-Us/Policies" },
+      { name: "Rules & procedures", path: "/Contact-Us/Rules-&-procedures" },
     ]
   },
 ];

@@ -1,4 +1,4 @@
-import { ethosSVG4 } from "@/assets";
+// import { ethosSVG4 } from "@/assets";
 // import ListSection from "@/components/shared/ListSection";
 // import PageTitle from "@/components/shared/pageTitle";
 import HeroTextBg from "@/components/shared/HeroTextBg";
@@ -14,7 +14,7 @@ export default function AquaGym() {
         <h3 className="mb-6 text-[25px] underline font-bold font-[Playfair-Display]">Overview:</h3>
         <p>ProSwim provides a variety of AquaGym classes for all ages.</p>
         <ListSection title1="Float-Fit" text1="Gives a fun, full body workout on a body length, unstable, floating platform called the Aqua-Base which adds a new, powerful dimension to working out. burns off 400 calories in 30 minutes." title2="Gymstick:" text2="The Aqua Gymstick is an adaptation of the Gymstick and this innovative aquatic tool challenges both muscle strength and cardiovascular fitness." title3="Shallow-Shred:" text3="Shred body fat in this one-hour boot camp - style class that incorporates both cardio and high intensity moves for upper body, lower body & core, resulting in a dynamic, full body workout." title4="Aqua-Fusion:" text4="Use water barbells, bands and noodles while focusing on range of motion, stability and balance" title5="Aqua-Power:" text5="Aqua power is the next step up! Aqua-power features impact free exercises designed to improve balance, agility, posture, flexibility and core strength." title6="Aqua-Zumba:" text6="Zumba pool party, Aqua Zumba program gives new meaning to the idea of an invigorating workout. Splashing, stretching, twisting, and even shouting & laughing are often heard during an Aqua Zumba class" title7="Aqua-Pilates:" text7="Aqua Pilates is designed to use water's natural resistance to increase the body's full range of motion while stabilizing the core muscles.The mind-body workout incorporates movements based on the Pilates method." title8="Aqua-Therapy:" text8="Aqua Therapy Focuses on strengthening common areas of weakness and increasing mobility in a safe aquatic environment. For those who are recovering from injuries & living with chronic medical conditions." isHoriz={true}
-        // imgSrc1={ethosSVG4}
+        // imgSrc1={ethosSVG4} AA TEST
         ></ListSection>
       </div>
 

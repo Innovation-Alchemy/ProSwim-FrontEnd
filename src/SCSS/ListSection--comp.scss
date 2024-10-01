@@ -4,7 +4,7 @@
   .card {
     gap: 15px;
     background-color: #eee;
-    min-height: 34vh;
+    // min-height: 34vh;
     min-width: 243px;
     max-width: 30%;
     border-radius: 20px;
@@ -36,7 +36,9 @@
       ;
     }
 
-    p {
+    p,
+    li,
+    ul {
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
