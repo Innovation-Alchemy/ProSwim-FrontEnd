@@ -4,40 +4,58 @@
   .card {
     gap: 15px;
     background-color: #eee;
-    width: 243px;
+    // min-height: 34vh;
+    min-width: 243px;
+    max-width: 30%;
     border-radius: 20px;
     padding: 15px 20px;
 
-    &:hover img {
-      transform: scale(1.05);
+    &:hover {
+      cursor: text;
+
+      img {
+        transform: scale(1.05);
+      }
     }
 
     img {
-      width: 50%;
+      width: 8rem;
+      aspect-ratio: 1/1;
       object-fit: contain;
       transition: all .3s ease;
     }
 
     h2 {
-      // font-family: 'Roboto'; // AA GO BACK TO
       font-style: normal;
       font-weight: 600;
       font-size: 20px;
       line-height: 23px;
       text-align: center;
       color: #1E5C97;
+      min-width: fit-content;
+      ;
     }
 
-    p {
-      // font-family: 'Roboto'; // AA GO BACK TO
+    p,
+    li,
+    ul {
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
       line-height: 18px;
-      text-align: center;
+      min-width: fit-content;
       color: rgba(0, 0, 0, 0.6);
     }
 
 
   }
+
+  .card--Horiz {
+    min-height: auto;
+
+    h2 {
+      margin-bottom: .75rem;
+    }
+  }
+
 }

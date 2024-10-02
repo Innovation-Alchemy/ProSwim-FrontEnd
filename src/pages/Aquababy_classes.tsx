@@ -1,13 +1,13 @@
-import { LearnToSwimGif1 } from "@/assets";
-import { LearnToSwimGif2 } from "@/assets";
+// import { LearnToSwimGif1 } from "@/assets";
+// import { LearnToSwimGif2 } from "@/assets";
 // import ListSection from "@/components/shared/ListSection";
 // import PageTitle from "@/components/shared/pageTitle";
 import HeroTextBg from "@/components/shared/HeroTextBg";
 
-export default function AquaBaby() {
+export default function AquaBaby_classes() {
 
-  return <div className="AquaBabyPage pt-[84px] pb-20 text-[18px]">
-    <HeroTextBg title="AquaBaby">
+  return <div className="AquaBabyPage--classes pt-[84px] pb-20 text-[18px]">
+    <HeroTextBg title="Aqua Baby">
     </HeroTextBg>
     <div className="content flex flex-col gap-12 mt-10 pl-10 pr-10 ">
 

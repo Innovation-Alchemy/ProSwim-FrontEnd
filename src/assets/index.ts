@@ -74,6 +74,14 @@ import ethosSVG4 from './aboutus/ethosSVG4.svg';
 import LearnToSwimGif1 from './classes/LearnToSwimGif1.gif';
 import LearnToSwimGif2 from './classes/LearnToSwimGif2.gif';
 
+// Levels:
+import ActiveStartSVG1 from './levels/ActiveStartSVG1.svg';
+import ActiveStartSVG2 from './levels/ActiveStartSVG2.svg';
+import ActiveStartSVG3 from './levels/ActiveStartSVG3.svg';
+import ActiveStartSVG4 from './levels/ActiveStartSVG4.svg';
+import ActiveStartSVG5 from './levels/ActiveStartSVG5.svg';
+import ActiveStartSVG6 from './levels/ActiveStartSVG6.svg';
+import ActiveStartSVG7 from './levels/ActiveStartSVG7.svg';
 
 export {
   // Authentication
@@ -149,5 +157,12 @@ export {
   // Classes:
   LearnToSwimGif1,
   LearnToSwimGif2,
-
+  // levels:
+  ActiveStartSVG1,
+  ActiveStartSVG2,
+  ActiveStartSVG3,
+  ActiveStartSVG4,
+  ActiveStartSVG5,
+  ActiveStartSVG6,
+  ActiveStartSVG7,
 };

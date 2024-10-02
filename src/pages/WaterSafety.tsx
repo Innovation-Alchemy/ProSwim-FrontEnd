@@ -11,10 +11,10 @@ export default function WaterSafety() {
 
     <div className="content flex flex-col mt-10 pl-10 pr-10">
       <h3 className="mb-6 text-[22px] underline font-bold font-[Roboto]">Water Safety</h3>
-      <p className="mb-6 text-[16px]">It’s something your child will learn and retain for the entirety of their life. It’s an ability they will have even as an elderly person.
+      <p className="mb-6 text-[18px]">It’s something your child will learn and retain for the entirety of their life. It’s an ability they will have even as an elderly person.
         <br />
         It’s the only sport that has the potential to be a true life saver.<strong>Swimming is a life skill!</strong></p>
-      <ul className="list-decimal flex flex-col gap-4 pl-4 text-[16px]">
+      <ul className="list-decimal flex flex-col gap-4 pl-4 text-[18px]">
         <li>Drowning is one of the top 5 causes of deaths for people aged 1-14 years old.</li>
         <li>Drowning in the 3rd leading cause of unintentional injury death worldwide, accounting for 7% of all injury- related deaths.</li>
         <li>There are an estimated 360,000 annual drowning deaths worldwide.</li>
