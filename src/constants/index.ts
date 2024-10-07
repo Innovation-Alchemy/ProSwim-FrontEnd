@@ -173,7 +173,7 @@ export const routes = [
     component: PhotoGallery,
   },
   {
-    path: "/pro-swimmers",
+    path: "/album/pro-swimmers",
     component: ProSwimmers,
   },
   {
@@ -257,12 +257,12 @@ export const links = [
   {
     name: "Album",
     pageChildren: [
-      { name: "ProSwimmers", path: "/Album/ProSwimmers" },
-      { name: "Wall Of Fame", path: "/Album/Wall-Of-Fame" },
-      { name: "Press Releases", path: "/Album/Press-Releases" },
-      { name: "Aqua Baby", path: "/Album/aqua-baby" },
-      { name: "Gallery", path: "/Album/Gallery" },
-      { name: "Videos", path: "/Album/Videos" }
+      { name: "ProSwimmers", path: "/album/pro-swimmers" },
+      { name: "Wall Of Fame", path: "/album/wall-of-fame" },
+      { name: "Press Releases", path: "/album/press-releases" },
+      { name: "Aqua Baby", path: "/album/aqua-baby" },
+      { name: "Gallery", path: "/lbum/gallery" },
+      { name: "Videos", path: "/album/videos" }
     ]
   },
   {

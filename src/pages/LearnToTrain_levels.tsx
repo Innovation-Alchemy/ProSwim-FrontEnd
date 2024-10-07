@@ -22,7 +22,7 @@ export default function LearnToSwim_levels() {
     "Building Endurance is still scheduled at this level."
   ];
 
-  return <div className="AquaBabyPage--levels pt-[84px] pb-20 text-[18px]">
+  return <div className="LearnToTrainPage--levels pt-[84px] pb-20 text-[18px]">
     <HeroTextBg title="Learn To Train">
     </HeroTextBg>
     <div className="content flex flex-col gap-20 mt-10 pl-10 pr-10 ">

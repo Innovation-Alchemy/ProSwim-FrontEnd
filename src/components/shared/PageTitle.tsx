@@ -7,6 +7,7 @@ const pageTitle = (
     mainTitle_2 = "Test Title",
     subTitle = "",
     date = "",
+    width = "180%",
   }
 ) => {
   return <>
@@ -28,7 +29,9 @@ const pageTitle = (
       }
 
 
-      <span></span>
+      <span
+        style={{ width: width }}
+      ></span>
     </div>
   </>;
 };

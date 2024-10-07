@@ -19,7 +19,7 @@ export default function TrainToCompete() {
   ];
 
 
-  return <div className="AquaBabyPage--levels pt-[84px] pb-20 text-[18px]">
+  return <div className="TrainToCompetePage--levels pt-[84px] pb-20 text-[18px]">
     <HeroTextBg title="Train To Compete">
     </HeroTextBg>
     <div className="content flex flex-col gap-20 mt-10 pl-10 pr-10 ">

@@ -68,9 +68,8 @@ const Carousel = () => {
           <button
             key={index}
             onClick={() => handleIndicatorClick(index)}
-            className={`w-4 h-4 rounded-full ${
-              currentIndex === index ? 'bg-blue-500' : 'bg-gray-900'
-            }`}
+            className={`w-4 h-4 rounded-full ${currentIndex === index ? 'bg-blue-500' : 'bg-gray-900'
+              }`}
           >
             {currentIndex === index && (
               <div className="w-2 h-2 bg-white rounded-full mx-auto"></div>

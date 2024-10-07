@@ -12,6 +12,7 @@ export default {
         roboto: ['Roboto Mono', 'monospace'],
         'cabin-sketch': ['Cabin Sketch', 'cursive'],
         'look-sans': ['Look Sans W00 Rough Bold', 'sans-serif'],
+
       },
       backgroundImage: {
         'auth-background':

@@ -83,6 +83,12 @@ import ActiveStartSVG5 from './levels/ActiveStartSVG5.svg';
 import ActiveStartSVG6 from './levels/ActiveStartSVG6.svg';
 import ActiveStartSVG7 from './levels/ActiveStartSVG7.svg';
 
+// Albums:
+import ProSwimmers1 from './albums/ProSwimmers1.png';
+import ProSwimmers2 from './albums/ProSwimmers2.png';
+import ProSwimmers3 from './albums/ProSwimmers3.png';
+import ProSwimmers4 from './albums/ProSwimmers4.png';
+
 export {
   // Authentication
   authenticationBackground,
@@ -165,4 +171,10 @@ export {
   ActiveStartSVG5,
   ActiveStartSVG6,
   ActiveStartSVG7,
+  // Albums:
+  ProSwimmers1,
+  ProSwimmers2,
+  ProSwimmers3,
+  ProSwimmers4,
+
 };
