@@ -26,13 +26,13 @@ const MobileNav = ({ closeMenu }: Props) => {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: "-100%", opacity: 0 }}
       transition={{ type: "tween" }}
-      className="fixed h-screen inset-0 bg-red-50 z-[1000] lg:hidden" // Ensure MobileNav only shows on small screens
+      className="MobileNavbar fixed h-screen inset-0 bg-red-50 z-[1000] lg:hidden" // Ensure MobileNav only shows on small screens
     >
       <div className="h-[84px] shadow-sm flex items-center justify-between container min-w-[100vw]">
         <img src={logo} alt="" className="h-[29px]" />
         <XIcon className="size-12 text-primary border-2 rounded-md p-1" onClick={closeMenu} />
       </div>
-      <ul className="flex flex-col px-6 pt-4 text-[1.35rem]">
+      <ul className="flex flex-col px-6 pt-4">
         {links.map((link, index) => (
           link.pageChildren ? (
             <span
@@ -45,7 +45,7 @@ const MobileNav = ({ closeMenu }: Props) => {
 
               {/* Dropdown for pageChildren */}
               {activeDropdown === index && ( // Show dropdown only if this is the active link
-                <div className="absolute top-0 right-0 translate-x-[110%] bg-white shadow-md mt-2 z-10 transition-all ease-in-out duration-300 shadow-[0px_0px_10px_-1px_rgba(0,0,0,.5)]">
+                <div className="AbsPageChild absolute top-0 right-0 translate-x-[110%] bg-white shadow-md mt-2 z-10 transition-all ease-in-out duration-300 shadow-[0px_0px_10px_-1px_rgba(0,0,0,.5)]">
                   {link.pageChildren.map((pageChild, PC__index) => (
                     <NavLink
                       key={PC__index}

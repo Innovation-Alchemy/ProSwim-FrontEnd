@@ -1,6 +1,17 @@
 .ContentBox--Sec {
   padding: 4rem 2rem;
 }
+@media screen and (max-width: 600px) {
+  .ContentBox--Sec {
+    flex-direction: column !important;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+  .ContentBox--Sec .leftBox,
+  .ContentBox--Sec .rightBox {
+    width: 100%;
+  }
+}
 .ContentBox--Sec .part {
   margin-bottom: 1rem;
 }
@@ -24,6 +35,7 @@
 }
 .ContentBox--Sec img {
   width: 100%;
+  min-width: 16rem;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;

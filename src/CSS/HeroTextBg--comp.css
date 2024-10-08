@@ -29,5 +29,11 @@
   font-size: 90px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 700px) {
+  .HeroTextBg .bgContainer .heroTitle {
+    font-size: 3.55rem;
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=HeroTextBg--comp.css.map */

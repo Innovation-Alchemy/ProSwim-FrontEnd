@@ -12,11 +12,10 @@ const Title = ({
   reverseSecondary = false,
 }: TitleProps) => {
   return (
-    <div className="flex items-center flex-col mb-10 ">
+    <div className="TitleContainer flex items-center flex-col mb-10 ">
       <h2
-        className={`font-bold text-[2.5rem] leading-none text-[#1E5C97] font-playfair-display capitalize text-center ${
-          reverseSecondary ? 'mb-2' : 'mb-7'
-        }`}
+        className={`font-bold text-[2.5rem] leading-none text-[#1E5C97] font-playfair-display capitalize text-center ${reverseSecondary ? 'mb-2' : 'mb-7'
+          }`}
       >
         {!reverseSecondary && (
           <span className="text-[#7E7E7E]">

@@ -1,3 +1,10 @@
-
+@media screen and (min-width: 700px) {
+  .MobileNavbar {
+    font-size: 1rem;
+  }
+  .MobileNavbar ul {
+    padding: 1rem 0.5rem;
+  }
+}
 
 /*# sourceMappingURL=navbar.css.map */
