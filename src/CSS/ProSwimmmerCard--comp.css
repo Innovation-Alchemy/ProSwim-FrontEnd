@@ -1,0 +1,36 @@
+.ProSwimmerCard {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+.ProSwimmerCard:hover {
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+.ProSwimmerCard:hover .card__desc {
+  transform: translateX(-50%) translateY(-110%);
+  top: 100%;
+  opacity: 1;
+}
+.ProSwimmerCard .card__content {
+  width: 100%;
+}
+.ProSwimmerCard .card__topBox {
+  padding: 0.5rem 1rem;
+}
+.ProSwimmerCard .card__desc {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(0px);
+  padding: 1rem 0.75rem;
+  width: 92%;
+  min-height: 80px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=ProSwimmmerCard--comp.css.map */

@@ -8,7 +8,7 @@ export default function CompetitiveTeam() {
 
 
 
-  return <div className="AquaBabyPage--levels pt-[84px] pb-20 text-[18px]">
+  return <div className="CompetitiveTeamPage--levels pt-[84px] pb-20 text-[18px]">
     <HeroTextBg title="Competitive Team">
     </HeroTextBg>
     <div className="content flex flex-col gap-20 mt-10 pl-10 pr-10 ">
@@ -17,7 +17,7 @@ export default function CompetitiveTeam() {
         <h3 className="mb-6 text-[24px] underline font-bold font-[Playfair-Display]">Competitive Team:</h3>
         <p className="mb-4">All swimmers who successfully complete all levels are ready to join ProSwim Competitive Team and compete nationally & internationally with the support of our best coaches! The team is trained & supervised by the academy’s Head Coach Mohamad Sakr... The team practices 6 times a week on school days and twice a day... 6 times a week on long vacations (summer vacation - Christmas vacation...) </p>
         <p>The team practices intensive drills related to the 4 swimming strokes, speed and endurance.. Furthermore, the team goes on professional high level boot camps supervised by the Head Coach. To build strength & endurance… In addition to offering a more challenging & varied workout... and creating and maintaining the team spirit among the team’s members. The team undergoes very hi-tech & advanced physical tests to Monitor their muscles growth, endurance, and development using the latest machines & technology. Because this level is very advanced & critical, we pay attention to the smallest details and follow up on them with specialists. We work hand in hand with:</p>
-          
+
         <div className="flex flex-col gap-6">
           <ListSection title1="Certified Experienced Nutritionist for Athletes:" text1="Who evaluates each swimmer’s dietary habits and counsels him/her on the proper diet which best suits him/her for the training and competitive situations."
             title2="Certified & Professional Dryland Trainers" text2="Dryland training is very beneficial for competitive swimmers when performed correctly. It’s a great way to strengthen the important muscle groups used when swimming and thus ultimately increasing the power of the swimmer and force output."

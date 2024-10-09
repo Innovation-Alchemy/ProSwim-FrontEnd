@@ -1,0 +1,29 @@
+.HomePage .CoreValuesSection .Card--comp {
+  min-height: 37rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .HomePage .CoreValuesSection .Card--comp {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .HomePage .CoreValuesSection .Card--comp {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .HomePage .CoreValuesSection .Card--comp {
+    width: 100%;
+  }
+}
+.HomePage .CoreValuesSection .Card--comp .Card__img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/*# sourceMappingURL=Home.css.map */

@@ -2,8 +2,9 @@ import { WhyUs_image1 } from "@/assets";
 import { WhyUs_image2 } from "@/assets";
 import { WhyUs_image3 } from "@/assets";
 import ContentBox from "@/components/shared/ContentBox";
-import PageTitle from "@/components/shared/pageTitle";
+import PageTitle from "@/components/shared/PageTitle";
 import HeroTextBg from "@/components/shared/HeroTextBg";
+import ".././CSS/WhyUs.css";
 
 const WhyUs = () => {
   return (

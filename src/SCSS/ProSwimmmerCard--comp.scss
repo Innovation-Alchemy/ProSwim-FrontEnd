@@ -1,0 +1,45 @@
+.ProSwimmerCard {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+
+
+  &:hover {
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+
+    .card__desc {
+      transform: translateX(-50%) translateY(-110%);
+      top: 100%;
+      opacity: 1;
+    }
+  }
+
+  .card__content {
+    // position: relative;
+    width: 100%;
+  }
+
+  .card__topBox {
+    padding: .5rem 1rem;
+  }
+
+  .card__name {}
+
+  .card__quote {}
+
+  .card__desc {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-0px);
+    padding: 1rem .75rem;
+    width: 92%;
+    min-height: 80px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+}

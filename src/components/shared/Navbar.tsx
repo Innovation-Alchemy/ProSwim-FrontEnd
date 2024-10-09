@@ -6,6 +6,7 @@ import MobileNav from './MobileNav';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MenuIcon } from 'lucide-react';
+import "../../CSS/navbar.css"
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
             link.pageChildren ? (
               <span
                 key={index}
-                className="relative group cursor-pointer text-black text-nowrap py-4"
+                className="relative group cursor-pointer text-black text-nowrap py-4 hover:text-[#1e5c97]"
                 onMouseEnter={() => setActiveDropdown(index)} // Show the dropdown for this link
                 onMouseLeave={() => setActiveDropdown(null)} // Hide the dropdown when not hovering
               >
@@ -45,7 +46,7 @@ const Navbar = () => {
 
                 {/* Dropdown for pageChildren */}
                 {activeDropdown === index && ( // Show dropdown only if this is the active link
-                  <div className="absolute bg-white shadow-md mt-2 z-10 transition-all ease-in-out duration-300 shadow-[0px_0px_10px_-1px_rgba(0,0,0,.5)]">
+                  <div className="absolute bg-white shadow-md mt-2 z-10 transition-all ease-in-out duration-300 shadow-[0px_0px_10px_-1px_rgba(0,0,0,.5)] ">
                     {link.pageChildren.map((pageChild, PC__index) => (
                       <NavLink
                         key={PC__index}
@@ -63,13 +64,14 @@ const Navbar = () => {
 
                             {/* Dropdown for subChildren */}
                             {activeDropdownPageChild === PC__index && (
-                              <div className="absolute right-[-90%] top-0 z-8 bg-white shadow-md p-4 ml-2 transition-all ease-in-out duration-1000 flex flex-col items-center justify-between">
+                              <div className="absolute right-[0px] top-0 translate-x-[99%] z-8 bg-white shadow-md  ml-2 transition-all ease-in-out duration-1000 flex flex-col items-center justify-between">
+                                {/* p-4 above */}
                                 {pageChild.subChildren.map((subChild) => (
                                   // Remove 'key={PC__index}' from here
                                   <NavLink
                                     to={subChild.path}
-                                    className="block text-black px-1 py-2 
-                                     w-full text-nowrap"
+                                    className="block text-black px-4 py-2 
+                                     w-full text-nowrap hover:bg-[#1e5c97] hover:text-white p-4"
                                     style={activeClassStyle}
                                   >
                                     {/* border-b border-t border-gray-300 */}
@@ -94,11 +96,13 @@ const Navbar = () => {
               <NavLink
                 key={index}
                 to={link.path}
-                className="relative group text-black"
+                className="relative group text-black py-4 hover:text-[#1e5c97]"
                 style={activeClassStyle}
               >
                 {link.name}
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300"
+                // group-hover:w-full" // AA GO BACK TO not needed
+                ></span>
               </NavLink>
             )
           ))}

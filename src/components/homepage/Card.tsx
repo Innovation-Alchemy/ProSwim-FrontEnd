@@ -6,18 +6,16 @@ type CardProps = {
 };
 
 const Card: React.FC<CardProps> = ({ title, text, img, isRotated = false }) => {
-  const imgClass = `w-full h-[32vh] object-cover ${isRotated ? "-scale-x-100" : ""
+  const imgClass = `w-full max-h-[10%] object-cover ${isRotated ? "-scale-x-100" : ""
     }`;
 
   return (
     <div
-      className={`bg-white transition-transform duration-300 
-        transform hover:scale-110   
-         shadow-2xl rounded-3xl overflow-hidden`}
+      className={`Card--comp bg-white transition-transform duration-300 hover:scale-[102.5%] flex flex-col items-center shadow-2xl rounded-3xl overflow-hidden`}
     >
-      <img className={imgClass} src={img} alt={title} />
-      <div className="flex flex-col items-start px-8 py-6 flex-grow">
-        <h3 className="mb-4 font-bold capitalize text-center w-full text-[24px] leading-6 font-[Playfair-Display]">
+      <img className={`Card__img ${imgClass}`} src={img} alt={title} />
+      <div className="flex flex-col items-start p-8 py-4 flex-grow min-h-[80%] h-[80%] ">
+        <h3 className="font-bold capitalize text-left text-xl leading-6">
           {title.trim().toLowerCase()}
         </h3>
         <p className="font-roboto text-sm text-center leading-[18px] font-normal leading-relaxed text-[#858585]">

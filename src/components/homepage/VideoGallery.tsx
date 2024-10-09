@@ -33,10 +33,10 @@ const VideoGallery: React.FC = () => {
     <div className='container'>
       <Title secondary="our" primary="videos" />
       <div className="gap-7"
-       style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
-      }}
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(40vw, 1fr))",
+        }}
       >
         {videos.map((video, index) => (
           <div key={index}>

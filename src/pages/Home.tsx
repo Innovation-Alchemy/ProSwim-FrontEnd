@@ -5,10 +5,11 @@ import Location from '@/components/homepage/Location';
 import Carousel from '@/components/homepage/Carousel';
 import Banner from '@/components/homepage/Banner';
 import { MobilePhotoGallery } from '@/components/homepage/MobilePhotoGallery';
+import "../CSS/Home.css";
 
 const Home = () => {
   return (
-    <div className="overflow-x-auto pt-[84px]">
+    <div className="HomePage overflow-x-auto pt-[84px]">
       <Carousel />
       <div className="my-16">
         <CoreValues />
