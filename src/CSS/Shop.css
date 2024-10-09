@@ -1,0 +1,170 @@
+.ShopPage .HeroTextBg {
+  height: 60vh;
+  width: 100vw;
+  max-width: 100% !important;
+}
+.ShopPage .HeroTextBg h1 {
+  width: 80%;
+}
+.ShopPage .HeroTextBg .bgContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ShopPage .HeroTextBg .bgContainer .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ShopPage .HeroTextBg .bgContainer .heroTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+  font-family: look sans w00 rough bold, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.55rem;
+}
+@media screen and (max-width: 700px) {
+  .ShopPage .HeroTextBg .bgContainer .heroTitle {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ShopPage .HeroTextBg .bgContainer .heroTitle {
+    font-size: 2.5rem;
+  }
+}
+.ShopPage .ShopPage__Content {
+  width: 100%;
+  max-width: 100vw;
+}
+.ShopPage .ShopPage__Content .CategoriesContainer {
+  position: relative;
+  padding: 1rem 1.5rem;
+  font-size: 25px;
+  font-family: Playfair-Display;
+  color: #808080;
+  margin-bottom: 40px;
+}
+.ShopPage .ShopPage__Content .CategoriesContainer::after {
+  position: absolute;
+  content: "";
+  width: 95%;
+  height: 1.5px;
+  background-color: #000;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ShopPage .ShopPage__Content .CategoriesContainer .CategoryTitle {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.ShopPage .ShopPage__Content .CategoriesContainer .CategoryTitle:hover {
+  color: #4d4d4d;
+}
+.ShopPage .ShopPage__Content .CategoriesContainer .CategoryTitle--Active {
+  color: #000;
+  position: relative;
+}
+.ShopPage .ShopPage__Content .CategoriesContainer .CategoryTitle--Active:hover {
+  color: #000;
+}
+.ShopPage .ShopPage__Content .CategoriesContainer .CategoryTitle--Active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #1e5c97;
+  animation: underline 0.2s ease-in-out;
+}
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .filtersContainer {
+  flex-basis: 60rem;
+  padding-top: calc(29px + 1rem);
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .filtersContainer .filter {
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer {
+  flex-grow: 1;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .productsHeader {
+  font-size: 18px;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .productsHeader p .prodsNum {
+  color: #fff;
+  background-color: #1e5c97;
+  padding: 0 15px;
+  border-radius: 8px;
+  transform: scale(0.8);
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .productsHeader .sortOptions {
+  border: solid 1px #000;
+  padding: 2.5px 10px;
+  border-radius: 4px;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .productsHeader .sortOptions:focus {
+  outline: none;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer {
+  margin-top: 1rem;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card {
+  width: 22%;
+  min-width: 207px;
+  min-height: 342px;
+  font-size: 1rem;
+  border: solid 1px #292929;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .imgContainer .mainImage {
+  height: 30%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .title {
+  text-wrap: wrap;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .CTA--viewDetails {
+  padding: 0.5rem 3rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #1e5c97;
+  border: solid 2px #fff;
+  text-wrap: nowrap;
+  transition: all 0.2s ease-in-out;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .CTA--viewDetails:hover {
+  border: solid 2px #1e5c97;
+  color: #1e5c97;
+  background-color: #fff;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .stepBtn--active {
+  color: #1e5c97;
+}
+
+/*# sourceMappingURL=Shop.css.map */

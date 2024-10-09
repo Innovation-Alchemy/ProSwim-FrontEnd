@@ -1,0 +1,22 @@
+[
+  {
+    "id": "category_id_111",
+    "title": "Swimwear & Beachwear",
+    "is_active": true
+  },
+  {
+    "id": "category_id_222",
+    "title": "Swimming Gear",
+    "is_active": true
+  },
+  {
+    "id": "category_id_333",
+    "title": "Towels & Bathrobes",
+    "is_active": true
+  },
+  {
+    "id": "category_id_444",
+    "title": "Aqua Fitness",
+    "is_active": true
+  }
+]
