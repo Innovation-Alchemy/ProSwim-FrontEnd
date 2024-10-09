@@ -123,8 +123,8 @@ export default function ProSwimmmers() {
               return (
                 <div className="card flex flex-col items-start justify-between gap-[0.5rem]" key={item[`id`]}>
                   <div className="imgContainer self-center flex flex-col items-center">
-                    <img className="mainImage w-full" src={shopItem1Pink} alt={shopItem1Pink} />
-                    <div className="flex items-center justify-center w-[50%]">
+                    <img className="mainImage" src={shopItem1Pink} alt={shopItem1Pink} />
+                    <div className="OtherImages flex items-center justify-center w-[50%]">
                       <img className="w-[50%]" src={shopItem1Pink} alt={shopItem1Pink} />
                       <img className="w-[50%]" src={shopItem1Blue} alt={shopItem1Blue} />
                     </div>

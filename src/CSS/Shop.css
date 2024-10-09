@@ -137,9 +137,13 @@
   border-radius: 10px;
 }
 .ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .imgContainer .mainImage {
-  height: 30%;
+  height: 80%;
+  width: 100%;
   aspect-ratio: 1/1;
   object-fit: contain;
+}
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .imgContainer .OtherImages {
+  height: 20%;
 }
 .ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .title {
   text-wrap: wrap;
