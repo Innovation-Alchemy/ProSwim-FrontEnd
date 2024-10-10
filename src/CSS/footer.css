@@ -7,6 +7,16 @@
   overflow: hidden;
   color: #fff;
 }
+@media screen and (max-width: 700px) {
+  .FooterPage {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .FooterPage {
+    height: 80vh;
+  }
+}
 .FooterPage .bg {
   z-index: 5;
   width: 100%;
@@ -23,9 +33,20 @@
   height: 100%;
   padding: 2rem 4rem;
 }
+@media screen and (max-width: 700px) {
+  .FooterPage .content {
+    padding: 2rem 0.65rem;
+  }
+}
 .FooterPage .content .upperBox {
   position: relative;
   margin-bottom: 4rem;
+}
+@media screen and (max-width: 700px) {
+  .FooterPage .content .upperBox {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 .FooterPage .content .upperBox::after {
   content: "";
@@ -36,18 +57,33 @@
   height: 2px;
   width: 100%;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 21px;
 }
 .FooterPage .content .upperBox .upperPart {
-  font-size: 20px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 700px) {
+  .FooterPage .content .upperBox .upperPart {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .FooterPage .content .upperBox .upperPart h1 {
+    padding-left: 0;
+  }
+  .FooterPage .content .upperBox .upperPart .Inner__upperPart {
+    flex-direction: row;
+  }
+  .FooterPage .content .upperBox .upperPart .Inner__upperPart :first-of-type {
+    padding-left: 0;
+  }
 }
 .FooterPage .content .upperBox .upperPart h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 .FooterPage .content .upperBox .upperPart--last p {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.2rem;
   line-height: 27px;
 }
 .FooterPage .content .lowerBox .socialLogo {
@@ -55,6 +91,21 @@
   height: 36px;
   aspect-ratio: 1/1;
   object-fit: contain;
+}
+@media screen and (max-width: 700px) {
+  .FooterPage .content .lowerBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    text-align: center;
+  }
+  .FooterPage .content .lowerBox:first-child, .FooterPage .content .lowerBox:last-child {
+    flex-basis: 35vw;
+  }
+  .FooterPage .content .lowerBox > * {
+    max-height: fit-content;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
