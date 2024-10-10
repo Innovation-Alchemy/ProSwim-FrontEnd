@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { shopBackground, shopItem1Pink, shopItem1Blue } from "@/assets";
 import ".././CSS/Shop.css";
-// import HeroTextBg from "@/components/shared/HeroTextBg";
-// import PageTitle from "@/components/shared/PageTitle";
+import { Link } from "react-router-dom";
 // import ProSwimmerCard from "@/components/Albums/ProSwimmerCard";
 
 
-export default function ProSwimmmers() {
+export default function Shop() {
   const [activeCategory, setActiveCategory] = useState("General");
 
   // const [pagesNumArray, setPagesNumArray] = useState([]);
@@ -132,7 +131,10 @@ export default function ProSwimmmers() {
                   <p className="brand">{item[`brand`]}</p>
                   <h1 className="title">{item[`title`]}</h1>
                   <p className="price">{`LBP${item[`price`]}`}</p>
-                  <button className="CTA--viewDetails">View Details</button>
+                  <Link to={`/shop/product-details/${encodeURIComponent(item["id"])}`} state={{ item }}
+                    onClick={() => { window.scroll(0, 0) }}
+                    className="CTA--viewDetails" >View Details
+                  </Link>
 
                   card #{(index + 1) * currentPage} (not accurate)
                   {/* AA TEST GO BACK TO */}

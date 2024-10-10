@@ -1,0 +1,229 @@
+.ProductDetailsPage {
+  .heroSection {
+    height: calc(100vh - 84px);
+    // min-height: fit-content;
+    width: 100%;
+    max-width: 100vw;
+    padding: 5vh 3rem;
+
+
+  }
+
+  .imgContainer,
+  .rightBox {
+    width: 40%;
+    height: 100%;
+  }
+
+  .imgContainer {
+    width: 60%;
+    // background-color: skyblue; // AA TEST
+
+    .mainImage {
+      height: 100%;
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: contain;
+      filter: brightness(105%); // AA GO BACK TO
+    }
+
+    .OtherImages {
+      width: 30%;
+      height: fit-content;
+
+      img {
+        width: 48%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+  }
+
+
+  .rightBox {
+    padding-top: 6rem;
+    text-align: left;
+    // background: peru; // AA TEST
+
+    // padding: 4vh 0;
+    h2 {
+      font-weight: 800;
+      font-family: playfair Display;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    h2,
+    .colorContainer p {
+      font-size: 1.9rem;
+    }
+
+    .detailsContainer {
+      p {
+        line-height: 23px;
+      }
+    }
+
+    .colorContainer {
+      padding: 0;
+    }
+
+    .CTA--AddToCart {
+      padding: .5rem 3rem;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      border-radius: 12px;
+      background-color: #1e5c97;
+      border: solid 2px #fff;
+      text-wrap: nowrap;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        border: solid 2px #1e5c97;
+        color: #1e5c97;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .ProdInfoSection {
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: fit-content;
+    padding: 70px 50px;
+    background-color: #f3f3f3;
+
+    .section__title {
+      font-weight: 800;
+      font-family: playfair Display;
+      position: relative;
+      width: fit-content;
+      font-size: 1.9rem;
+      margin-bottom: 50px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #1e5c97;
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .SimProdSection,
+  .MayLikeSection {
+    width: 100%;
+    max-width: 100vw;
+    padding: 14vh 50px;
+
+    .section__title {
+      font-weight: 800;
+      font-family: playfair Display;
+      position: relative;
+      width: fit-content;
+      font-size: 1.9rem;
+      margin-bottom: 50px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #1e5c97;
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .cardsContainer {
+      margin-top: 1rem;
+      padding-bottom: 20px;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        height: 4px;
+        border-radius: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #1e5c97;
+        border-radius: 5px;
+      }
+
+      .card {
+        width: 30%;
+        min-width: 257px; // AA from (figma + 50px)
+        min-height: 342px; // AA from figma
+        font-size: 1rem;
+        border: solid 1px #292929;
+        padding: .75rem 1rem;
+        border-radius: 10px;
+
+        .imgContainer {
+          .mainImage {
+            height: 80%;
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+          }
+
+          .OtherImages {
+            height: 20%;
+
+            img {
+              aspect-ratio: 1/1;
+              object-fit: contain;
+            }
+          }
+        }
+
+        .title {
+          text-wrap: wrap;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 18px;
+        }
+
+        .price {}
+
+        .CTA--viewDetails {
+          padding: .5rem 3rem;
+          width: 100%;
+          text-align: center;
+          color: #fff;
+          border-radius: 5px;
+          background-color: #1e5c97;
+          border: solid 2px #fff;
+          text-wrap: nowrap;
+          transition: all .2s ease-in-out;
+
+          &:hover {
+            border: solid 2px #1e5c97;
+            color: #1e5c97;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
