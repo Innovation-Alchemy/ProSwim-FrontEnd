@@ -7,6 +7,14 @@
   overflow: hidden;
   color: #fff;
 
+  @media screen and (max-width: 700px) {
+    height: 70vh;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 80vh;
+  }
+
   .bg {
     z-index: -1;
     position: absolute;
@@ -25,9 +33,18 @@
     padding: 2rem 4rem;
     background: transparent;
 
+    @media screen and (max-width: 700px) {
+      padding: 2rem .65rem;
+    }
+
     .upperBox {
       position: relative;
       margin-bottom: 4rem;
+
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+        align-items: start;
+      }
 
       &::after {
         content: "";
@@ -38,14 +55,31 @@
         height: 2px;
         width: 100%;
         background-color: #fff;
-        border-radius: 20px;
+        border-radius: 21px;
       }
 
       .upperPart {
-        font-size: 20px;
+        font-size: 1.2rem;
+
+        @media screen and (max-width:700px) {
+          text-align: left;
+          margin-bottom: 1rem;
+
+          h1 {
+            padding-left: 0;
+          }
+
+          .Inner__upperPart {
+            flex-direction: row;
+
+            & :first-of-type {
+              padding-left: 0;
+            }
+          }
+        }
 
         h1 {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 800;
         }
       }
@@ -53,7 +87,7 @@
       .upperPart--last {
         p {
           font-weight: 500;
-          font-size: 20px;
+          font-size: 1.2rem;
           line-height: 27px;
         }
       }
@@ -65,6 +99,23 @@
         height: 36px;
         aspect-ratio: 1/1;
         object-fit: contain;
+      }
+
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+        text-align: center;
+
+        &:first-child,
+        &:last-child {
+          flex-basis: 35vw;
+        }
+
+        &>* {
+          max-height: fit-content;
+        }
       }
     }
 
