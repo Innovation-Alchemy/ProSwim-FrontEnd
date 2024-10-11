@@ -145,6 +145,10 @@
 .ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .imgContainer .OtherImages {
   height: 20%;
 }
+.ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .imgContainer .OtherImages img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
 .ShopPage .ShopPage__Content .filtersNProductsContainer .productsContainer .cardsContainer .card .title {
   text-wrap: wrap;
   font-style: normal;

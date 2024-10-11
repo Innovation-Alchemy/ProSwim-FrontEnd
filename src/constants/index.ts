@@ -153,7 +153,7 @@ export const routes = [
     component: Checkout,
   },
   {
-    path: "/shop/product-details",
+    path: "/shop/product-details/:id",
     component: ProductDetails,
   },
   {
