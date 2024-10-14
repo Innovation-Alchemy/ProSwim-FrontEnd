@@ -88,6 +88,8 @@ import ProSwimmers1 from './albums/ProSwimmers1.png';
 import ProSwimmers2 from './albums/ProSwimmers2.png';
 import ProSwimmers3 from './albums/ProSwimmers3.png';
 import ProSwimmers4 from './albums/ProSwimmers4.png';
+// ContactUs:
+import FAQ_Icon from './contactus/FAQ_Icon.svg';
 
 export {
   // Authentication
@@ -176,5 +178,7 @@ export {
   ProSwimmers2,
   ProSwimmers3,
   ProSwimmers4,
+  // ContactUs:
+  FAQ_Icon,
 
 };

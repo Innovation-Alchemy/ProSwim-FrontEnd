@@ -26,6 +26,10 @@ import {
   GroupClasses,
   Adults,
   LadiesOnly,
+  // ContactUs:
+  FAQ,
+  Policies,
+  RulesNProcedures,
 
   // AA End -----------
   Cart,
@@ -44,7 +48,7 @@ import {
 } from "@/pages";
 
 import { homeCarouselImage, homeCarouselImage2 } from "@/assets";
-import path from "path";
+// import path from "path";
 // import AquaBaby from "@/pages/Aquababy";
 
 export const routes = [
@@ -157,12 +161,24 @@ export const routes = [
     component: ProductDetails,
   },
   {
-    path: "/dashboard",
-    component: Dashboard,
+    path: "/contact-us/your-feedback",
+    component: Feedback,
   },
   {
-    path: "/feedback",
-    component: Feedback,
+    path: "/contact-us/FAQ",
+    component: FAQ,
+  },
+  {
+    path: "/contact-us/policies",
+    component: Policies,
+  },
+  {
+    path: "/contact-us/Rules-&-procedures",
+    component: RulesNProcedures,
+  },
+  {
+    path: "/dashboard",
+    component: Dashboard,
   },
   {
     path: "/learn-to-swim",
@@ -268,11 +284,11 @@ export const links = [
   {
     name: "Contact Us",
     pageChildren: [
-      { name: "Locations", path: "/Contact-Us/Locations" },
-      { name: "Your Feedback", path: "/Contact-Us/Your-Feedback" },
-      { name: "FAQ", path: "/Contact-Us/FAQ" },
-      { name: "Policies", path: "/Contact-Us/Policies" },
-      { name: "Rules & procedures", path: "/Contact-Us/Rules-&-procedures" },
+      { name: "Locations", path: "/contact-us/locations" },
+      { name: "Your Feedback", path: "contact-us/your-feedback" },
+      { name: "FAQ", path: "/contact-us/FAQ" },
+      { name: "Policies", path: "/contact-us/policies" },
+      { name: "Rules & procedures", path: "/contact-us/rules-&-procedures" },
     ]
   },
 ];

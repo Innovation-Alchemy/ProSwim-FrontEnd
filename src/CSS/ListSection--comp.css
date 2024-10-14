@@ -9,14 +9,7 @@
   border-radius: 20px;
   padding: 15px 20px;
 }
-.ListSection--cardsContainer .card:hover {
-  cursor: text;
-}
-.ListSection--cardsContainer .card:hover img {
-  transform: scale(1.05);
-}
 .ListSection--cardsContainer .card img {
-  width: 8rem;
   aspect-ratio: 1/1;
   object-fit: contain;
   transition: all 0.3s ease;

@@ -6,6 +6,8 @@ export default function ListSection({
   MaxWidth = "30%",
   MinHeight = "44vh",
   className = "",
+  childClassName = "",
+  imgClassName = "",
   imgSrc1 = "", title1 = "", text1 = "", items1 = [], children1 = null,
   imgSrc2 = "", title2 = "", text2 = "", items2 = [], children2 = null,
   imgSrc3 = "", title3 = "", text3 = "", items3 = [], children3 = null,
@@ -41,8 +43,9 @@ export default function ListSection({
 
   const renderCard = (imgSrc, title, text, items, children) => (
     isHoriz === false ? (
-      <div className="card flex flex-col items-center justify-around text-center" style={{ maxWidth: AAMaxWidth, width: AAMaxWidth, minHeight: AAMinHeight }}>
-        {imgSrc && <img src={imgSrc} alt={imgSrc} />}
+      <div className={`card group flex flex-col items-center justify-around text-center${childClassName}`} style={{ maxWidth: AAMaxWidth, width: AAMaxWidth, minHeight: AAMinHeight }}>
+        {imgSrc && <img src={imgSrc} alt={imgSrc} className={`
+      w-[8rem] group-hover:scale-105 ${imgClassName}`} />}
         {title && <h2>{title}</h2>}
         {text && <p>{text}</p>}
         {items.length > 0 && (
@@ -55,9 +58,10 @@ export default function ListSection({
         {children}
       </div>
     ) : (
-      <div className={isImage ? "card card--Horiz flex items-center justify-start " : "card card--Horiz flex items-start justify-start"} style={{ maxWidth: AAMaxWidth, width: AAMaxWidth, minHeight: AAMinHeight }}>
-        {imgSrc && <img src={imgSrc} alt={imgSrc} />}
-        <div className="flex flex-col items-start text-left justify-around">
+      <div className={isImage ? `card card--Horiz group flex items-center justify-start ${childClassName}` : `card card--Horiz group flex items-start justify-start ${childClassName}`} style={{ maxWidth: AAMaxWidth, width: AAMaxWidth, minHeight: AAMinHeight }}>
+        {imgSrc && <img src={imgSrc} alt={imgSrc} className={`
+      w-[8rem] group-hover:scale-105 ${imgClassName}`} />}
+        <div className="flex flex-col items-start text-left justify-around w-full">
           {title && <h2>{title}</h2>}
           {text && <p className="text-left">{text}</p>}
           {items.length > 0 && (

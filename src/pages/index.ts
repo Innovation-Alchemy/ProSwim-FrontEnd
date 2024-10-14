@@ -35,6 +35,9 @@ import GroupClasses from "./GroupClasses";
 import Adults from "./Adults";
 import LadiesOnly from "./LadiesOnly";
 import LearnToTrain_levels from "./LearnToTrain_levels";
+import FAQ from "./FAQ";
+import Policies from "./Policies";
+import RulesNProcedures from "./RulesNProcedures";
 
 
 export {
@@ -78,4 +81,8 @@ export {
   LadiesOnly,
   // levels:
   LearnToTrain_levels,
+  // ContactUs:
+  FAQ,
+  Policies,
+  RulesNProcedures
 };

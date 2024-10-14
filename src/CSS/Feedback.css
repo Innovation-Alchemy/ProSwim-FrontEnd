@@ -1,0 +1,77 @@
+.FeedbackPage .FormSection {
+  padding: 3rem 3rem;
+  padding-bottom: 0;
+}
+.FeedbackPage .FormSection .title {
+  font-size: 2.45rem;
+  font-family: Playfair Display;
+  font-weight: 600;
+  text-decoration: 1px underline;
+}
+.FeedbackPage .FormSection .Form {
+  padding-top: 2rem;
+}
+.FeedbackPage .FormSection .Form .Box1 {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .FeedbackPage .FormSection .Form .Box1 {
+    gap: 20px;
+  }
+  .FeedbackPage .FormSection .Form .Box1 #phoneNum {
+    margin-bottom: 1.5rem;
+  }
+}
+.FeedbackPage .FormSection .Form .inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  flex-grow: 1;
+  width: 40%;
+}
+@media screen and (max-width: 700px) {
+  .FeedbackPage .FormSection .Form .inputContainer {
+    width: 100%;
+    gap: 10px;
+  }
+}
+.FeedbackPage .FormSection .Form .inputContainer h2 {
+  font-size: 1.3rem;
+  font-family: playfair Display;
+  font-weight: 600;
+}
+.FeedbackPage .FormSection .Form .inputContainer input,
+.FeedbackPage .FormSection .Form .inputContainer textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background-color: #f2f2f2;
+  border: solid 1px #d2d2d2;
+}
+.FeedbackPage .FormSection .Form .inputContainer input:focus,
+.FeedbackPage .FormSection .Form .inputContainer textarea:focus {
+  outline: none;
+}
+.FeedbackPage .FormSection .Form .inputContainer input::placeholder,
+.FeedbackPage .FormSection .Form .inputContainer textarea::placeholder {
+  font-family: playfair Display;
+}
+.FeedbackPage .FormSection .Form .inputContainer--Msg {
+  width: 100% !important;
+}
+.FeedbackPage .FormSection .Form .inputContainer--Msg textarea {
+  min-height: 25vh;
+}
+.FeedbackPage .FormSection .Form .CTA {
+  align-self: center;
+  margin: 2rem;
+  padding: 0.25rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  color: #fff;
+  background-color: #1e5c97;
+}
+
+/*# sourceMappingURL=Feedback.css.map */
