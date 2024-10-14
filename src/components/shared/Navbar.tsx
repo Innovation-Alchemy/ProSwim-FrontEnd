@@ -108,12 +108,14 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Button
-          type="submit"
-          className="w-[9.0625rem] h-9 text-base max-lg:hidden hover:bg-transparent hover:font-bold hover:text-blue-500 hover:border-blue-500 hover:border-2"
-        >
-          Login
-        </Button>
+        <Link key="Login" to="/Login">
+          <Button
+            type="submit"
+            className="CTA--Login w-[9.0625rem] h-9 text-base max-lg:hidden hover:bg-transparent hover:font-bold hover:text-blue-500 hover:border-blue-500 hover:border-2"
+          >
+            Login
+          </Button>
+        </Link>
         <MenuIcon
           onClick={() => setToggle(true)}
           type="submit"
