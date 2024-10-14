@@ -284,11 +284,11 @@ export const links = [
   {
     name: "Contact Us",
     pageChildren: [
-      { name: "Locations", path: "/contact-us/locations" },
+      // { name: "Locations", path: "/contact-us/locations" },
       { name: "Your Feedback", path: "contact-us/your-feedback" },
       { name: "FAQ", path: "/contact-us/FAQ" },
       { name: "Policies", path: "/contact-us/policies" },
-      { name: "Rules & procedures", path: "/contact-us/rules-&-procedures" },
+      { name: "القواعد والإجراءات", path: "/contact-us/rules-&-procedures" },
     ]
   },
 ];
