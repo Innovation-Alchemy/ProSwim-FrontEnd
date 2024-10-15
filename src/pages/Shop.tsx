@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 export default function Shop() {
   const [activeCategory, setActiveCategory] = useState("General");
-
   // const [pagesNumArray, setPagesNumArray] = useState([]);
   // start JSONS
   const [products, setProducts] = useState([]);

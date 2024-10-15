@@ -1,0 +1,35 @@
+.CardListAll {
+  gap: 2rem 1.25rem;
+}
+.CardListAll > * {
+  color: #5f5f5f;
+  width: 22vw;
+  padding: 1rem 2.25rem;
+  border-radius: 20px;
+  background-color: #eee;
+  min-height: fit-content;
+  flex-grow: 1;
+}
+@media screen and (max-width: 700px) {
+  .CardListAll > * {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .CardListAll > * {
+    width: 90vw;
+  }
+}
+.CardListAll > * li {
+  color: #5f5f5f;
+  margin-left: 0.5rem;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.CardListAll--Small > * {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+/*# sourceMappingURL=CardListStyle.css.map */
