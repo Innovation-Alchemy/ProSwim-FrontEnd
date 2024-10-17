@@ -14,7 +14,7 @@ export default function SwimmingBenefits() {
       <p className="mb-6">Do you know why swimming is the best sport for you from health perspective? Well, because it has lots of health benefits, physically and mentally, in addition to the important values that can change your life in a positive way.!</p>
       <ul className="list-decimal flex flex-col gap-12 pl-4">
         <li className="font-bold font-[Playfair-Display]">Benefits on physical health:
-          <ul className="CardListAll list-disc flex items-stretch justify-evenly flex-wrap text-[15px] mt-6">
+          <ul className="CardListAll list-disc flex items-stretch justify-start flex-wrap gap-6 pl-4 text-[15px] mt-6">
             <div>
               <li>increases the heart rate without putting stress on the body</li>
             </div>
@@ -45,7 +45,7 @@ export default function SwimmingBenefits() {
           </ul>
         </li>
         <li className="font-bold font-[Playfair-Display]">Benefits on mental health:
-          <ul className="CardListAll CardListAll--Small  list-disc flex items-stretch justify-evenly flex-wrap text-[15px] mt-6 pl-4">
+          <ul className="CardListAll list-disc flex items-stretch justify-start flex-wrap gap-6 pl-4">
             <div>
               <li>improves sleep</li>
             </div>
@@ -64,7 +64,7 @@ export default function SwimmingBenefits() {
           </ul>
         </li>
         <li className="font-bold font-[Playfair-Display]">Values gained from swimming:
-          <ul className="CardListAll CardListAll--Small list-disc flex items-stretch justify-evenly flex-wrap text-[15px] mt-6 pl-4">
+          <ul className="CardListAll list-disc flex items-stretch justify-start flex-wrap gap-6 pl-4">
             <div>
               <li>Fitness</li>
             </div>

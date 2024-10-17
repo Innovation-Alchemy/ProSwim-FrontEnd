@@ -21,20 +21,34 @@ export default function PrivateClasses() {
       {/* ------ */}
       <div>
         <h3 className="mb-6 text-[22px] underline font-bold font-[Playfair-Display]">Benefits:</h3>
-        <ul className="list-disc flex flex-col gap-0 pl-4">
-          <li>Swimming skill improvement</li>
-          <li>Skill mastery</li>
+        <ul className="CardListAll list-disc flex items-stretch justify-start flex-wrap gap-6 pl-4">
+          <div>
+            <li>Swimming skill improvement</li>
+          </div>
+          <div>
+            <li>Skill mastery</li>
+          </div>
         </ul>
       </div>
       {/* ------ */}
       <div>
         <h3 className="mb-6 text-[22px] underline font-bold font-[Playfair-Display]">What to bring:</h3>
-        <ul className="list-disc flex flex-col gap-0 pl-4">
-          <li>Come to class dressed and ready for the pool.</li>
-          <li>Clothes, diaper bags (in case needed) and other personal items can be stored in the locker rooms, leave your valuables at home.</li>
-          <li>Sandals or flip-flops are permitted in the pool area; No street shoes permitted.</li>
-          <li>Towel, goggles.</li>
-          <li>Inform the instructor of physical impairments, fear of or bad experiences with the water to ensure a more positive lesson.</li>
+        <ul className="CardListAll list-disc flex items-stretch justify-start flex-wrap gap-6 pl-4">
+          <div>
+            <li>Come to class dressed and ready for the pool.</li>
+          </div>
+          <div>
+            <li>Clothes, diaper bags (in case needed) and other personal items can be stored in the locker rooms, leave your valuables at home.</li>
+          </div>
+          <div>
+            <li>Sandals or flip-flops are permitted in the pool area; No street shoes permitted.</li>
+          </div>
+          <div>
+            <li>Inform the instructor of physical impairments, fear of or bad experiences with the water to ensure a more positive lesson.</li>
+          </div>
+          <div>
+            <li>Towel, goggles.</li>
+          </div>
         </ul>
       </div>
       {/* ------ */}

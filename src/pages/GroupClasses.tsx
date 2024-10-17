@@ -23,17 +23,28 @@ export default function GroupClasses() {
       {/* ------ */}
       <div>
         <h3 className="mb-6 text-[22px] underline font-bold font-[Playfair-Display]">Group classes are divided into three levels:</h3>
-        <ul className="list-disc flex flex-col gap-4 pl-4 text-[18px]">
+        <ul className="CardListAll CardListAll--Group list-none flex items-stretch justify-start flex-wrap gap-6 pl-4 text-[18px]">
           <div>
-            <li className="text-[18px] font-semibold">Beginners level:</li>
+            <li className="text-[18px] font-semibold"><h3>
+              Beginners level:
+            </h3>
+            </li>
             <p>This class is for a comfortable beginner typically age 4 or 5 years. We teach water safety rules, floats, glides, jumps, in addition of changing direction and position. Graduation will be made after each semester. After finishing the beginners’ level the kids will be prepared to join the intermediate level.</p>
           </div>
           <div>
-            <li className="text-[18px] font-semibold">Intermediate level:</li>
+            <li className="text-[18px] font-semibold">
+              <h3>
+                Intermediate level:
+              </h3>
+            </li>
             <p>This class is for those who finished the beginners level and will Begin front crawl, backstroke, jumping in shallow and deep water, rolling over, kneeling dives, back crawl, rhythmic breathing with front crawl, dives, underwater swimming and introduce breaststroke</p>
           </div>
           <div>
-            <li className="text-[18px] font-semibold">Advanced level:</li>
+            <li className="text-[18px] font-semibold">
+              <h3>
+                Advanced level:
+              </h3>
+            </li>
             <p>This class is for those who finished the intermediate level and will Begin breaststroke, butterfly, the scissor kick, treading water, racing dives, will Introduce dolphin kick, fins and beginning butterfly, Advanced backstroke kicks, and build endurance</p>
           </div>
         </ul>

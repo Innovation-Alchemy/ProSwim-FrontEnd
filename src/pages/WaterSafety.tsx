@@ -16,7 +16,7 @@ export default function WaterSafety() {
       <p className="mb-6 text-[18px]">It’s something your child will learn and retain for the entirety of their life. It’s an ability they will have even as an elderly person.
         <br />
         It’s the only sport that has the potential to be a true life saver.<strong>Swimming is a life skill!</strong></p>
-      <ul className="CardList--Style list-decimal flex items-stretch justify-evenly flex-wrap text-[15px]">
+      <ul className="CardListAll list-decimal flex items-stretch justify-start flex-wrap text-[15px]">
         <div>
           <li>Drowning is one of the top 5 causes of deaths for people aged 1-14 years old.</li>
         </div>

@@ -6,7 +6,7 @@ import HeroTextBg from "@/components/shared/HeroTextBg";
 export default function AquaGym() {
 
   return <div className="SpecialClassesPage pt-[84px]">
-    <HeroTextBg title="Special Classes">
+    <HeroTextBg title="Special Needs">
     </HeroTextBg>
     <div className="content flex flex-col gap-2 mt-10 pl-10 pr-10 ">
       <h3 className="mb-4 text-[24px] underline font-bold font-[Playfair-Display]">Overview:</h3>
@@ -31,17 +31,33 @@ export default function AquaGym() {
           <p>Swimming offers a special needs child with success no matter what the outcome, which is hard to come by in other situations in their life. The benefits from it are just amazing and are great therapy for a child with special needs!!</p>
           <p>We created a Learn to Swim program that includes a patient understanding of each swimming student as well as a well-thought-out plan for how the lessons can be adapted to each child.</p>
           <p>Here is an overview on our effective swimming program for children with special needs:</p>
-          <ul className="list-disc flex flex-col gap-1 pl-4">
-            <li>Give each child individualized attention...our coaches are patient and work with the child at his own pace to get him adapted to be and move in water confidently.</li>
-            <li>Use appropriate adaptive equipment. To make the water experience more positive and easier for them...like floating mats and more.</li>
-            <li>Limit distractions...like harsh lighting or background noises.</li>
-            <li>Consistent. Our instructors are consistent in their teaching times, methods & routines.</li>
-            <li>Adapt to the needs of each child...by adapting the lessons to match the ways in which each child learns best.</li>
-            <li>Emphasize basic water skills -- Before attempting to teach swimming via traditional strokes, it’s important to make sure that each child masters basic water skills like breathing, maneuvering underwater, and flotation. These skills will not come naturally for many children, which is why a patient, consistent teaching method is best.</li>
-            <li>Make it fun -- Getting into the water for the first time can be a scary experience for many special need’s children. We Try to reduce water anxiety by making their experience fun and giving them plenty of praise and encouragement.</li>
-            <li>Plan for safety -- safety is a top priority in our swimming program. Safety measures include having a private lesson, clean water, qualified swim instructor, and a planned ahead plan.</li>
+          <ul className="CardListAll gap-6 pl-4 list-disc">
+            <div>
+              <li>Give each child individualized attention...our coaches are patient and work with the child at his own pace to get him adapted to be and move in water confidently.</li>
+            </div>
+            <div>
+              <li>Use appropriate adaptive equipment. To make the water experience more positive and easier for them...like floating mats and more.</li>
+            </div>
+            <div>
+              <li>Limit distractions...like harsh lighting or background noises.</li>
+            </div>
+            <div>
+              <li>Consistent. Our instructors are consistent in their teaching times, methods & routines.</li>
+            </div>
+            <div>
+              <li>Adapt to the needs of each child...by adapting the lessons to match the ways in which each child learns best.</li>
+            </div>
+            <div>
+              <li>Emphasize basic water skills -- Before attempting to teach swimming via traditional strokes, it’s important to make sure that each child masters basic water skills like breathing, maneuvering underwater, and flotation. These skills will not come naturally for many children, which is why a patient, consistent teaching method is best.</li>
+            </div>
+            <div>
+              <li>Make it fun -- Getting into the water for the first time can be a scary experience for many special need’s children. We Try to reduce water anxiety by making their experience fun and giving them plenty of praise and encouragement.</li>
+            </div>
+            <div>
+              <li>Plan for safety -- safety is a top priority in our swimming program. Safety measures include having a private lesson, clean water, qualified swim instructor, and a planned ahead plan.</li>
+            </div>
           </ul>
-          <p>The risk of drowning for children with special needs is more than double that of a typically developing child.</p>
+          <p className="mt-2">The risk of drowning for children with special needs is more than double that of a typically developing child.</p>
           <p>That’s why we encourage and urge all individuals to teach & learn this life & safety skill!</p>
 
         </div>
@@ -54,8 +70,13 @@ export default function AquaGym() {
             No doubt that swimming at our academy is FUN & EXCITING, but there are few etiquette tips to follow when u dive more into our swimming lessons, that will help your child and others have a pleasant, calm and comfortable experience.
           </p>
           <div>
-            <h3 className="font-bold">GENERAL ETIQUETTE:</h3>
-            <p>Mermaid swimming requires that you use your core muscles and hips in unison to swim with a “dolphin kick” that imitates the efficient movements of a dolphin. Mermaiding is both a cardio and strength training and it targets your abs, thighs and glutes all at once!! In addition to working out the upper body and arms</p>
+            <h3 className="font-bold underline mb-4">GENERAL ETIQUETTE:</h3>
+            <ul className="gap-6 pl-6 list-disc">
+              <li>Collect empty water bottles and trash from around the pool deck after the training is finished.</li>
+              <li>Rinse yourself off before entering the pool at the pool side shower.</li>
+              <li>Avoid eating heavy large meals 2 hours prior to the swimming practice.</li>
+              <li>If your lesson is directly after school, small snacks like a sandwich or salads are recommended to be given in the car on the way to training.</li>
+            </ul>
           </div>
         </div>
 

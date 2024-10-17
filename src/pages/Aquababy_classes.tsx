@@ -22,36 +22,81 @@ export default function AquaBaby_classes() {
       </div>
       <div>
         <h3 className="mb-6 text-[24px] underline font-bold font-[Playfair-Display]">Program Philosophy:</h3>
-        <ul className="list-disc flex flex-col gap-4 pl-4">
-          <li>We recognize and support the special bond that exists between parent and child. We therefore believe that parents make the best teachers for their young infant and when coupled with our professional guidance, allows the child's water confidence to develop in a safe and nurturing environment.</li>
-          <li>Babies and children all develop at a different pace, so it’s okay for your little one to take their time in the classes. Power struggles and regression are all part and parcel of a child’s physical, mental and emotional development.</li>
-          <li>We are here to help guide and support you through this experience so that your child will gradually become a confident swimmer.</li>
+        <ul className="CardListAll list-disc gap-6 pl-4">
+          <div>
+            <li>We recognize and support the special bond that exists between parent and child. We therefore believe that parents make the best teachers for their young infant and when coupled with our professional guidance, allows the child's water confidence to develop in a safe and nurturing environment.</li>
+          </div>
+          <div>
+            <li>Babies and children all develop at a different pace, so it’s okay for your little one to take their time in the classes. Power struggles and regression are all part and parcel of a child’s physical, mental and emotional development.</li>
+          </div>
+          <div>
+            <li>We are here to help guide and support you through this experience so that your child will gradually become a confident swimmer.</li>
+          </div>
         </ul>
       </div>
       <div>
         <h3 className="mb-6 text-[24px] underline font-bold font-[Playfair-Display]">Learning Aims:</h3>
-        <ul className="list-decimal flex flex-col gap-4 pl-4">
-          <li>Water awareness & confidence.</li>
-          <li>Back floating: children are introduced to back floating while being supported by their parents.</li>
-          <li>Submersion: this is introduced in our Jellyfish classes around the 3rd week of the program. The process starts by learning a verbal cue and getting the face wet, before going underwater.</li>
-          <li>Water safety: Sit, Listen and Wait: this is a safety exercise used at the start of each lesson, to teach each child that they need to wait for parental permission to get into the water. This is introduced developmentally and age appropriately for each class level. Our goal is to help children be safer in and around the water. Teaching your child how to return to the mat or wall if they fall.</li>
+        <ul className="CardListAll CardListAll--Blue CardListAll--Combined list-decimal gap-6 pl-4">
+          <div>
+            <li>
+              <h3>
+                Water awareness & confidence.
+              </h3>
+            </li>
+          </div>
+          <div>
+            <li>
+              <h3>
+                Back floating:
+              </h3>
+              <div>
+                Children are introduced to back floating while being supported by their parents.
+              </div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <h3>
+                Submersion:
+              </h3>
+              <div>
+                This is introduced in our Jellyfish classes around the 3rd week of the program. The process starts by learning a verbal cue and getting the face wet, before going underwater.
+              </div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <h3>
+                Water safety:
+              </h3>
+              <div>
+                Sit, Listen and Wait: this is a safety exercise used at the start of each lesson, to teach each child that they need to wait for parental permission to get into the water. This is introduced developmentally and age appropriately for each class level. Our goal is to help children be safer in and around the water. Teaching your child how to return to the mat or wall if they fall.
+              </div>
+            </li>
+          </div>
         </ul>
       </div>
       <div>
         <h3 className="mb-6 text-[24px] underline font-bold font-[Playfair-Display]">Benefits:</h3>
-        <ul className="list-decimal flex flex-col gap-4 pl-4">
-          <li>The water gives tremendous freedom of movement: Water’s natural buoyancy makes it extremely enabling, allowing babies to exercise a multitude of muscle groups. Water resistance will make these muscle group exercises more effective, strengthening your baby’s heart and lungs as well as increasing his or her co-ordination skills. In addition, this activity also stimulates appetite and leads to improve sleeping and eating patterns. The one- to-one contact between adult and child during a class increases the special bond between the two of you, the skin to skin and eye to eye contact help to increase your connection away from any distraction</li>
-
-          <li>Movement in water aids brain development Research indicates a strong link between movement and learning, especially in early swimming. According to Lana Whitehead, the president of Swim Kids USA: ‘Scientific studies show that active movement at a very young age facilitates brain development, intellectual achievement, language acquisition, reading readiness, sensory integration and the building of self-esteem’. Essentially, movement increases a child’s overall ability to learn; they are learning to learn while learning to swim!</li>
-
-          <li>‘Early Swimmers Leave Others in Their Wake’ As reported the Daily Telegraph in 2018, this research carried out by the Griffith Institute for Educational Research was extensive. Lead Researcher Professor Roby Jorgensen said: ‘Early swimmers achieved physical milestones faster, scored significantly better in visual motor skills and many mathematically related tasks. Their oral expression was better as well as general areas of literacy and numeracy.’</li>
-
-          <li>Aqua Babies’ baby and toddler swimmers develop early water confidence skills. They are both relaxed in the water and they are trained to develop a good breath-holding ability along with a specific set of safety skills.</li>
-
-          <li>Toddlers swimming with us benefit greatly from focused activities. The play and the repetition, along with turn taking, their social skills develop during the group activity. Their achievements in the pool are also building blocks on which their self-esteem will grow and develop.</li>
-
-          <li>Our babies and toddlers develop an understanding and confidence with their own buoyancy. Firstly, below the water and later as motor skills develop, on top. This ability enables them to choose whether they are above or below the water’s surface and this control allows for confidence in water rather than fear.</li>
-
+        <ul className="CardListAll list-decimal gap-6 pl-4">
+          <div>
+            <li>The water gives tremendous freedom of movement: Water’s natural buoyancy makes it extremely enabling, allowing babies to exercise a multitude of muscle groups. Water resistance will make these muscle group exercises more effective, strengthening your baby’s heart and lungs as well as increasing his or her co-ordination skills. In addition, this activity also stimulates appetite and leads to improve sleeping and eating patterns. The one- to-one contact between adult and child during a class increases the special bond between the two of you, the skin to skin and eye to eye contact help to increase your connection away from any distraction</li>
+          </div>
+          <div>
+            <li>Movement in water aids brain development Research indicates a strong link between movement and learning, especially in early swimming. According to Lana Whitehead, the president of Swim Kids USA: ‘Scientific studies show that active movement at a very young age facilitates brain development, intellectual achievement, language acquisition, reading readiness, sensory integration and the building of self-esteem’. Essentially, movement increases a child’s overall ability to learn; they are learning to learn while learning to swim!</li>
+          </div>
+          <div>
+            <li>‘Early Swimmers Leave Others in Their Wake’ As reported the Daily Telegraph in 2018, this research carried out by the Griffith Institute for Educational Research was extensive. Lead Researcher Professor Roby Jorgensen said: ‘Early swimmers achieved physical milestones faster, scored significantly better in visual motor skills and many mathematically related tasks. Their oral expression was better as well as general areas of literacy and numeracy.’</li>
+          </div>
+          <div>
+            <li>Aqua Babies’ baby and toddler swimmers develop early water confidence skills. They are both relaxed in the water and they are trained to develop a good breath-holding ability along with a specific set of safety skills.</li>
+          </div>
+          <div>
+            <li>Toddlers swimming with us benefit greatly from focused activities. The play and the repetition, along with turn taking, their social skills develop during the group activity. Their achievements in the pool are also building blocks on which their self-esteem will grow and develop.</li>
+          </div>
+          <div>
+            <li>Our babies and toddlers develop an understanding and confidence with their own buoyancy. Firstly, below the water and later as motor skills develop, on top. This ability enables them to choose whether they are above or below the water’s surface and this control allows for confidence in water rather than fear.</li>
+          </div>
         </ul>
       </div>
 

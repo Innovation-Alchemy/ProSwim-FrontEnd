@@ -20,34 +20,40 @@ export default function AquaMermaid() {
           <p>
             Furthermore, Students will learn basic swimming techniques, like swimming strokes and treading water...not forgetting the fin-fun part with some underwater activities like treasure hunt! More advanced mermaids will learn breathing techniques, handstands, rolls, and underwater poses. Take it a step further and learn choreography where you can make up your own routines. But, other than the obvious fun of it, aqua mermaid class is actually a serious activity.</p>
         </div>
-        <div className="flex flex-col gap-2">
-          <p className="font-bold mb-2">Mermaid Swimming is, Basically, “Monofin Swimming.”</p>
-          <p>
-            Monofins are like scuba diving flippers except instead of one on each foot you put both feet into a larger flipper. Monofin swimming is serious competitive swimming and Monofin swimmers break several swimming and diving records because the equipment allows them to swim faster and more efficiently than other fin swimmers. Monofins are an active area of swimming technology and development.
-          </p>
+        <div className="CardListAll CardListAll--Blue CardListAll--Two list-decimal gap-6 pl-4">
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold mb-2">Mermaid Swimming is, Basically, “Monofin Swimming.”</h3>
+            <p>
+              Monofins are like scuba diving flippers except instead of one on each foot you put both feet into a larger flipper. Monofin swimming is serious competitive swimming and Monofin swimmers break several swimming and diving records because the equipment allows them to swim faster and more efficiently than other fin swimmers. Monofins are an active area of swimming technology and development.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold mb-2">Teaches Teamwork</h3>
+            <p>Our Mermaid students first learn how to safely put on their mermaid tail, come in and out of the pool, before learning the breath holding techniques, dolphin kick actions and then progress onto mermaid routines. Mermaid swimming lessons and skills are very closely related and based on synchronized swimming. That is a great opportunity for our swimmers to learn to work in teams, to rely on each other and to themselves be reliable swimming partners!
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold mb-2">It’s A Fantastic Workout.</h3>
+            <p>
+              Swimming, as you know, is the best exercise you can do. But what you do not know is that swimming with a tail and underwater adds an additional challenge for swimmers and makes the work-out slightly more intense. Mermaid swimming is a killer way to get or stay in shape! A single hour of mermaid swimming can burn up to 600 calories. "It offers a total-body workout from toning your glutes, quads and abs, combined with great cardio exercises working on breath control.
+            </p>
+            <p>Mermaid swimming requires that you use your core muscles and hips in unison to swim with a “dolphin kick” that imitates the efficient movements of a dolphin.  Mermaiding is both a cardio and strength training and it targets your abs, thighs and glutes all at once!! In addition to working out the upper body and arms</p>
+          </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <p className="font-bold mb-2">It’s A Fantastic Workout.</p>
-          <p>
-            Swimming, as you know, is the best exercise you can do. But what you do not know is that swimming with a tail and underwater adds an additional challenge for swimmers and makes the work-out slightly more intense. Mermaid swimming is a killer way to get or stay in shape! A single hour of mermaid swimming can burn up to 600 calories. "It offers a total-body workout from toning your glutes, quads and abs, combined with great cardio exercises working on breath control.
-          </p>
-          <p>Mermaid swimming requires that you use your core muscles and hips in unison to swim with a “dolphin kick” that imitates the efficient movements of a dolphin.  Mermaiding is both a cardio and strength training and it targets your abs, thighs and glutes all at once!! In addition to working out the upper body and arms</p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <p className="font-bold mb-2">Teaches Teamwork</p>
-          <p>Our Mermaid students first learn how to safely put on their mermaid tail, come in and out of the pool, before learning the breath holding techniques, dolphin kick actions and then progress onto mermaid routines. Mermaid swimming lessons and skills are very closely related and based on synchronized swimming.  That is a great opportunity for our swimmers to learn to work in teams, to rely on each other and to themselves be reliable swimming partners!
-          </p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <p className="font-bold mb-2">Mermaid Swimming Is Motivating.</p>
-          <p>For all those little ones who got hard time or a bad previous experience learning swimming... Aqua mermaid class is a chance to introduce your little child to the aquatic environment and to enjoy swimming or even the concept of being in the pool...Mermaid swimming might be a way to get them into the water!
-          </p>
-          <p>Can imagine the smile on your little one’s face and their giggle when you tell them that they can now be a real mermaid or a shark! That is an excellent motivation for any child to learn how to swim and become a confident swimmer. Mermaiding is a truly fun and great way to help your kids overcome any fears they might have. Learn to swim in this fun and dynamic 50-60 minute aqua-fitness class in a beautiful mermaid tail!  You will be surprised at the speed and power behind the mermaid tail.</p>
-          <p>Yes, the mermaid class is for both adults and children to learn some pretty cool tricks, like how to swim with a tail, the mermaid "high five," and how to do handstands, which soon translate into synchronized mermaid swimming skills.  It is ideal for people as they age!  Aqua Mermaid is a low impact sport that benefits from the buoyant effect of the water that takes pressure off joints, alleviating pain and discomfort...</p>
-          <p>ProSwim is the only swimming school in Lebanon offering this-out of this world-experience...  You can also book a photoshoot session for amazing memorable shots for you and your little mermaids!  Whether you are joining us for your very first mermaid class or have been swimming for years, your first visit to our pool is a big deal.! We want you to have an awesome experience! Our aqua mermaid friendly, knowledgeable team and the variety of levels, schedules, and tails to choose from...is at your service!! For the class, you usually just need to wear a swimsuit. The school will normally supply the monofin and the tail skin. The monofin is a piece of equipment with foot pockets that allows you to propel forward in the water.</p>
-          <p className="font-bold">Have fun… And make it an experience to remember...!!</p>
+        <div className="CardListAll CardListAll--Blue gap-6 pl-4">
+          <div className="flex flex-col gap-2 col-[1/4]">
+            <h3 className="font-bold mb-2">Mermaid Swimming Is Motivating.</h3>
+            <p>For all those little ones who got hard time or a bad previous experience learning swimming... Aqua mermaid class is a chance to introduce your little child to the aquatic environment and to enjoy swimming or even the concept of being in the pool...Mermaid swimming might be a way to get them into the water!
+            </p>
+            <p>Can imagine the smile on your little one’s face and their giggle when you tell them that they can now be a real mermaid or a shark! That is an excellent motivation for any child to learn how to swim and become a confident swimmer. Mermaiding is a truly fun and great way to help your kids overcome any fears they might have. Learn to swim in this fun and dynamic 50-60 minute aqua-fitness class in a beautiful mermaid tail! You will be surprised at the speed and power behind the mermaid tail.</p>
+            <p>Yes, the mermaid class is for both adults and children to learn some pretty cool tricks, like how to swim with a tail, the mermaid "high five," and how to do handstands, which soon translate into synchronized mermaid swimming skills. It is ideal for people as they age! Aqua Mermaid is a low impact sport that benefits from the buoyant effect of the water that takes pressure off joints, alleviating pain and discomfort...</p>
+            <p>ProSwim is the only swimming school in Lebanon offering this-out of this world-experience... You can also book a photoshoot session for amazing memorable shots for you and your little mermaids! Whether you are joining us for your very first mermaid class or have been swimming for years, your first visit to our pool is a big deal.! We want you to have an awesome experience! Our aqua mermaid friendly, knowledgeable team and the variety of levels, schedules, and tails to choose from...is at your service!! For the class, you usually just need to wear a swimsuit. The school will normally supply the monofin and the tail skin. The monofin is a piece of equipment with foot pockets that allows you to propel forward in the water.</p>
+            <p className="font-bold">Have fun… And make it an experience to remember...!!</p>
+          </div>
         </div>
       </div>
+
       <div className="flex flex-col gap-4">
         <div>
           <h3 className="mb-6 text-[24px] underline font-bold font-[Playfair-Display]">Class Ettiquette:</h3>

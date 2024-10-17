@@ -16,17 +16,24 @@ export default function Adults() {
       </div>
       <div className="flex flex-col gap-4">
         <h3 className="mb-2 text-[22px] underline font-bold font-[Playfair-Display]">Benefits:</h3>
-        <ul className="list-disc flex flex-col gap-5 pl-4 text-[18px]">
-          <li className="font-semibold">Learning the Basics:
-            <br />
+        <ul className="CardListAll list-none gap-6 pl-4 list-disc text-[18px]">
+          <li className="font-semibold">
+            <h3>
+              Learning the Basics:
+            </h3>
             <span className="font-normal">Learn basic swimming strokes and skills needed to stay safe, and help keep others safe in and around the water. This class introduces swimmers to the pool and helps them develop safe water habits. Skills are taught that focus on body position and control, forward movement and rotary breathing.</span>
           </li>
           <li className="font-semibold">
-            Improving Skills and Swimming Strokes:
+            <h3>
+              Improving Skills and Swimming Strokes:
+            </h3>
             <span className="font-normal">Participants will gain proficiency in basic aquatic skills and the six basic swimming strokes. In this class, students will work on the front crawl, back crawl and breast stroke form and technique. Must be able to swim 25 meters with basic rotary breathing.</span>
           </li>
           <li className="font-semibold">
-            Swimming for Fitness: <span className="font-normal">Participants will learn to refine their front crawl, back crawl, breaststroke and turns to build endurance. This class is a private lesson scheduled individually with an instructor. We will meet you at your current ability and help bringing you to the next level to meet your goal. Whether that is to get over a fear or refresh your skills.</span>
+            <h3>
+              Swimming for Fitness:
+            </h3>
+            <span className="font-normal">Participants will learn to refine their front crawl, back crawl, breaststroke and turns to build endurance. This class is a private lesson scheduled individually with an instructor. We will meet you at your current ability and help bringing you to the next level to meet your goal. Whether that is to get over a fear or refresh your skills.</span>
           </li>
         </ul>
       </div>
